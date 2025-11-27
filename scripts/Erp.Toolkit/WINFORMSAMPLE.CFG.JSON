@@ -1,0 +1,47 @@
+[
+  {
+    "Sort": 0,
+    "ColumnName": "Salary",
+    "DependentColumns": [],
+    "ColumnType": "System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "RuleType": 0,
+    "LogicalType": 7,
+    "Value1": "10000",
+    "Value2": "",
+    "Font": "微软雅黑, 9pt",
+    "ForeColor": "Red",
+    "BackColor": "Yellow",
+    "FullRow": false,
+    "AllowStyleStacking": false
+  },
+  {
+    "Sort": 0,
+    "ColumnName": "Salary",
+    "DependentColumns": [],
+    "ColumnType": "System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "RuleType": 0,
+    "LogicalType": 6,
+    "Value1": "20000",
+    "Value2": "",
+    "Font": "微软雅黑, 9pt",
+    "ForeColor": "Red",
+    "BackColor": "Lime",
+    "FullRow": false,
+    "AllowStyleStacking": false
+  },
+  {
+    "Sort": 0,
+    "ColumnName": "Status",
+    "DependentColumns": [],
+    "ColumnType": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+    "RuleType": 0,
+    "LogicalType": 2,
+    "Value1": "离职",
+    "Value2": "",
+    "Font": "微软雅黑, 9pt",
+    "ForeColor": "Red",
+    "BackColor": "MistyRose",
+    "FullRow": false,
+    "AllowStyleStacking": false
+  }
+]
