@@ -3,11 +3,11 @@
 [![Docker Image Size](https://img.shields.io/docker/image-size/doipc/erpwebapi?color=0db7ed)](https://hub.docker.com/r/doipc/erpwebapi)
 [![License](https://img.shields.io/github/license/zhangsanbin/my-project-assets?color=97ca00)](./LICENSE)
 [![Docker](https://img.shields.io/badge/docker-latest-0db7ed?logo=docker)](https://hub.docker.com/r/doipc/erpwebapi)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/zhangsanbin/my-project-assets?color=fe7d37)](https://github.com/zhangsanbin/my-project-assets)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/zhangsanbin/Erp.Toolkit?color=fe7d37)](https://github.com/zhangsanbin/Erp.Toolkit)
 [![Pulls](https://img.shields.io/docker/pulls/doipc/erpwebapi?color=6f42c1)](https://hub.docker.com/r/doipc/erpwebapi)
 [![NuGet Version](https://img.shields.io/nuget/v/Erp.Toolkit?color=005cc5)](https://www.nuget.org/packages/Erp.Toolkit)
 
-[English](README.md) | [中文](https://github.com/zhangsanbin/my-project-assets/blob/main/docs/Erp.Toolkit/README_zh.md)
+[English](README.md) | [中文](https://github.com/zhangsanbin/Erp.Toolkit/blob/main/docs/Erp.Toolkit/README_zh.md)
 
 An open-source, enterprise-grade, deeply customizable user control component library, providing a rich set of WinForms UI components and tools.
 
@@ -32,7 +32,7 @@ This package is an extension for the ERP 2.0 project, aimed at simplifying the d
 - .NET 6.0, 7.0, 8.0 (Windows)
 
 ## Preview
-![Preview](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/images/Erp.Toolkit/erp.toolkit.sample.png)
+![Preview](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/images/Erp.Toolkit/erp.toolkit.sample.png)
 
 ## How to Pack
 
@@ -57,7 +57,7 @@ Install-Package Erp.Toolkit
 
 ## How to Use
 
-| [Quick Start](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs) | [Full Example](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs) | [NuGet Package](https://www.nuget.org/packages/Erp.Toolkit) |
+| [Quick Start](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs) | [Full Example](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs) | [NuGet Package](https://www.nuget.org/packages/Erp.Toolkit) |
 | -- | -- | -- |
 
 ```csharp
@@ -167,13 +167,13 @@ private List<SampleData> GenerateSampleData()
 
 ## Sample Code
 
-- [Quick Start](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs)
-- [Full Example](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs)
-- [Conditional Style Configuration](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.CFG.JSON)
-- [Custom Column Configuration](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.COL.JSON)
+- [Quick Start](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs)
+- [Full Example](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs)
+- [Conditional Style Configuration](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.CFG.JSON)
+- [Custom Column Configuration](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.COL.JSON)
 - [NuGet Package](https://www.nuget.org/packages/Erp.Toolkit)
-- [English Readme](https://github.com/zhangsanbin/my-project-assets/blob/main/docs/Erp.Toolkit/README.md)
-- [Chinese Readme](https://github.com/zhangsanbin/my-project-assets/blob/main/docs/Erp.Toolkit/README_zh.md)
+- [English Readme](https://github.com/zhangsanbin/Erp.Toolkit/blob/main/docs/Erp.Toolkit/README.md)
+- [Chinese Readme](https://github.com/zhangsanbin/Erp.Toolkit/blob/main/docs/Erp.Toolkit/README_zh.md)
 
 > [!TIP]
 > Erp.Toolkit - Making enterprise development less complex!

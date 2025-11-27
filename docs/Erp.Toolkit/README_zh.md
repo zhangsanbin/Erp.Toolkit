@@ -1,9 +1,9 @@
 # Erp.Toolkit
 
 [![Docker Image Size](https://img.shields.io/docker/image-size/doipc/erpwebapi?color=0db7ed)](https://hub.docker.com/r/doipc/erpwebapi)
-[![License](https://img.shields.io/github/license/zhangsanbin/my-project-assets?color=97ca00)](./LICENSE)
+[![License](https://img.shields.io/github/license/zhangsanbin/Erp.Toolkit?color=97ca00)](./LICENSE)
 [![Docker](https://img.shields.io/badge/docker-latest-0db7ed?logo=docker)](https://hub.docker.com/r/doipc/erpwebapi)
-[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/zhangsanbin/my-project-assets?color=fe7d37)](https://github.com/zhangsanbin/my-project-assets)
+[![GitHub commit activity](https://img.shields.io/github/commit-activity/y/zhangsanbin/Erp.Toolkit?color=fe7d37)](https://github.com/zhangsanbin/Erp.Toolkit)
 [![Pulls](https://img.shields.io/docker/pulls/doipc/erpwebapi?color=6f42c1)](https://hub.docker.com/r/doipc/erpwebapi)
 [![NuGet Version](https://img.shields.io/nuget/v/Erp.Toolkit?color=005cc5)](https://www.nuget.org/packages/Erp.Toolkit)
 
@@ -32,7 +32,7 @@
 - .NET 6.0, 7.0, 8.0 (Windows)
 
 ## 预览
-![示例图](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/images/Erp.Toolkit/erp.toolkit.sample.png)
+![示例图](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/images/Erp.Toolkit/erp.toolkit.sample.png)
 
 ## 如何打包
 
@@ -57,7 +57,7 @@ Install-Package Erp.Toolkit
 
 ## 如何使用
 
-| [快速入门](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs) | [完整示例](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs) | [NuGet程序包](https://www.nuget.org/packages/Erp.Toolkit) |
+| [快速入门](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs) | [完整示例](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs) | [NuGet程序包](https://www.nuget.org/packages/Erp.Toolkit) |
 | -- | -- | -- |
 
 ```csharp
@@ -167,13 +167,13 @@ private List<SampleData> GenerateSampleData()
 
 ## 示例代码
 
-- [快速入门](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs)
-- [完整示例](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs)
-- [条件样式配置](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.CFG.JSON)
-- [自定义列配置](https://raw.githubusercontent.com/zhangsanbin/my-project-assets/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.COL.JSON)
+- [快速入门](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs)
+- [完整示例](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs)
+- [条件样式配置](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.CFG.JSON)
+- [自定义列配置](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.COL.JSON)
 - [NuGet程序包](https://www.nuget.org/packages/Erp.Toolkit)
-- [英文自述](https://github.com/zhangsanbin/my-project-assets/blob/main/docs/Erp.Toolkit/README.md)
-- [中文自述](https://github.com/zhangsanbin/my-project-assets/blob/main/docs/Erp.Toolkit/README_zh.md)
+- [英文自述](https://github.com/zhangsanbin/Erp.Toolkit/blob/main/docs/Erp.Toolkit/README.md)
+- [中文自述](https://github.com/zhangsanbin/Erp.Toolkit/blob/main/docs/Erp.Toolkit/README_zh.md)
 
 > [!TIP]
 > Erp.Toolkit - 让企业级开发不再复杂！
