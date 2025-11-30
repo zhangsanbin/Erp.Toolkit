@@ -17,6 +17,7 @@ This package is an extension for the ERP 2.0 project, aimed at simplifying the d
 
 - High-performance DataGridView control
 - Multi-target framework support (.NET Framework 4.6.2+ and .NET Core 3.1+)
+- Multi-language support ( zh-CN, zh-TW, en-US, de-DE, fr-FR, ja-JP )
 - Rich theme system
 - Conditional styling and formatting
 - Master-detail grid views

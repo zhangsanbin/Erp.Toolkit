@@ -17,6 +17,7 @@
 
 - 高性能的 DataGridView 控件
 - 多目标框架支持 (.NET Framework 4.6.2+ 和 .NET Core 3.1+)
+- 多语言支持 ( zh-CN, zh-TW, en-US, de-DE, fr-FR, ja-JP )
 - 丰富的主题系统
 - 条件样式和格式化
 - 主从表格视图
