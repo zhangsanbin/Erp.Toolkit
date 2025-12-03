@@ -22,6 +22,9 @@ namespace Erp.Toolkit.Sample
         [STAThread]
         private static void Main()
         {
+            // 切换到英文界面
+            Erp.Toolkit.Localization.LanguageService.SwitchToEnglish();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             // Application.Run(new WinFormSample());// 简单示例
