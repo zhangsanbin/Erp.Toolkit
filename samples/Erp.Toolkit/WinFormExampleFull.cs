@@ -47,7 +47,7 @@ namespace Erp.Toolkit.ExampleFull
             dgv.SubviewsEnable();
 
             // 开启，百分比进度条显示模式
-            dgv.subview.ProgressColumnsName = "Progress";
+            dgv.subview.ProgressColumnName = "Progress";
 
             // 设置主题
             dgv.ThemeStyle = ThemeStyle.blue;
