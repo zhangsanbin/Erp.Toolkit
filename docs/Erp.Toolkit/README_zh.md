@@ -33,7 +33,7 @@
 - .NET 6.0, 7.0, 8.0 (Windows)
 
 ## 预览
-![示例图](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/images/Erp.Toolkit/erp.toolkit.sample.png)
+![示例图](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/images/Erp.Toolkit/zh-CN.png)
 
 ## 如何打包
 
