@@ -33,7 +33,7 @@ This package is an extension for the ERP 2.0 project, aimed at simplifying the d
 - .NET 6.0, 7.0, 8.0 (Windows)
 
 ## Preview
-![Preview](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/images/Erp.Toolkit/erp.toolkit.sample.png)
+![Preview](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/images/Erp.Toolkit/en-US.png)
 
 ## How to Pack
 
@@ -58,7 +58,7 @@ Install-Package Erp.Toolkit
 
 ## How to Use
 
-| [Quick Start](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs) | [Full Example](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs) | [NuGet Package](https://www.nuget.org/packages/Erp.Toolkit) |
+| [Quick Start](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs) | [Full Example](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull_en-US.cs) | [NuGet Package](https://www.nuget.org/packages/Erp.Toolkit) |
 | -- | -- | -- |
 
 ```csharp
@@ -169,7 +169,7 @@ private List<SampleData> GenerateSampleData()
 ## Sample Code
 
 - [Quick Start](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormSample.cs)
-- [Full Example](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull.cs)
+- [Full Example](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/samples/Erp.Toolkit/WinFormExampleFull_en-US.cs)
 - [Conditional Style Configuration](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.CFG.JSON)
 - [Custom Column Configuration](https://raw.githubusercontent.com/zhangsanbin/Erp.Toolkit/refs/heads/main/scripts/Erp.Toolkit/WINFORMSAMPLE.COL.JSON)
 - [NuGet Package](https://www.nuget.org/packages/Erp.Toolkit)
