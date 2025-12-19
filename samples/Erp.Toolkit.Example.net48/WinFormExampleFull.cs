@@ -18,106 +18,103 @@ using System.Windows.Forms;
 namespace Erp.Toolkit.ExampleFull
 {
     /// <summary>
-    /// Erp.Toolkit WinForm 使用示例
+    /// Erp.Toolkit WinForm Usage Example
     /// </summary>
     public partial class WinFormExampleFull : Form
     {
-        // 创建控件
+        // Create control
         private Erp.Toolkit.Controls.Dgv dgv = new Erp.Toolkit.Controls.Dgv();
 
-        // 示例数据源（项目）
+        // Sample data source (projects)
         private List<ProjectData> _allProjectData;
 
         public WinFormExampleFull()
         {
             InitializeComponent();
 
-            // 示例数据
+            // Sample data
             var sampleData = GenerateSampleData();
             _allProjectData = GenerateProjectData(sampleData);
 
-            // 呈现在UI层
+            // Render at UI level
             Controls.Add(dgv);
             dgv.Dock = DockStyle.Fill;
 
-            // 填充顶级主视图的数据
+            // Fill data for the top-level main view
             dgv.FillList(sampleData, this.Name);
 
-            // 启用子视图并初始化（不填充数据）
+            // Enable subview and initialize (without filling data)
             dgv.SubviewsEnable();
 
-            // 开启，百分比进度条显示模式
+            // Enable, percentage progress bar display mode
             dgv.subview.ProgressColumnName = "Progress";
 
-            // 设置主题
-            dgv.ThemeStyle = ThemeStyle.blue;
+            // Set theme
+            dgv.ThemeStyle = ThemeStyle.BlueTheme;
 
-            // 自定义用户菜单或工具条
+            // Custom user menu or toolbar
             List<DgvUserContextMenuStripConfig> menuConfigs = new List<DgvUserContextMenuStripConfig>
             {
                 new DgvUserContextMenuStripConfig
                 {
-                    MenuText = "详细档案",
+                    MenuText = "Detailed Profile",
                     Target = MenuShowTarget.ToolStrip | MenuShowTarget.ContextMenuStrip,
                     Group = 1,
                     ClickHandler = (senders, es) => {
                         var winFrom = new WinFormExampleFull();
-                        winFrom.Text = $"查看员工 {dgv.GetSelectedItemIds()} 的详细档案";
+                        winFrom.Text = $"View detailed profile for employee {dgv.GetSelectedItemIds()}";
                         winFrom.ShowDialog();
                     }
                 }
             };
 
-            // 构建用户菜单配置
+            // Build user menu configuration
             dgv.SetUserContextMenu(menuConfigs);
 
-            // 订阅事件
+            // Subscribe to events
             SubscribeEvent();
         }
 
         /// <summary>
-        /// 订阅所需的事件
+        /// Subscribe to required events
         /// </summary>
         private void SubscribeEvent()
         {
-            // 展开事件
+            // Expand event
             dgv.MasterSlaveDataExpand += Dgv_MasterSlaveDataExpand;
 
-            // 双击事件
+            // Double-click event
             dgv.DoubleClickDgv += Dgv_DoubleClickDgv;
 
-            // 新增事件
+            // Add event
             dgv.AddDgv += Dgv_AddClickDgv;
 
-            // 删除事件
+            // Delete event
             dgv.DeleteDgv += Dgv_DeleteDgv;
 
-            // 根据事件重新刷新按钮状态
+            // Refresh button state based on event
             dgv.RefreshButtonState();
         }
 
         /// <summary>
-        /// 主从数据展开事件
+        /// Master-detail data expand event
         /// </summary>
         private void Dgv_MasterSlaveDataExpand(object sender, DataGridViewCellMouseEventArgs e, string id, Rectangle rect)
         {
             if (int.TryParse(id, out int userId))
             {
-                // 根据用户ID获取对应的项目数据
+                // Get corresponding project data based on user ID
                 var userProjects = _allProjectData
                     .Where(p => p.UserId == userId)
                     .ToList();
 
-                // 填充子数据
+                // Fill subview data
                 dgv.FillSubviewWithList(userProjects);
-
-                // 设置二级子视图的工具条不可见
-                dgv.subview.ToolStripVisible = false;
             }
         }
 
         /// <summary>
-        /// 双击事件
+        /// Double-click event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -125,24 +122,24 @@ namespace Erp.Toolkit.ExampleFull
         /// <exception cref="NotImplementedException"></exception>
         private void Dgv_DoubleClickDgv(object sender, EventArgs e, string id)
         {
-            // 调用 API 接口，或其他操作
-            Console.WriteLine($"双击了 ID 为 {id} 的行");
+            // Call API interface, or other operations
+            Console.WriteLine($"Double-clicked row with ID {id}");
         }
 
         /// <summary>
-        /// 新增事件
+        /// Add event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         /// <exception cref="NotImplementedException"></exception>
         private void Dgv_AddClickDgv(object sender, EventArgs e)
         {
-            // 调用 API 接口，或其他操作
-            Console.WriteLine("点击了新增按钮");
+            // Call API interface, or other operations
+            Console.WriteLine("Clicked the Add button");
         }
 
         /// <summary>
-        /// 删除事件
+        /// Delete event
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -150,12 +147,12 @@ namespace Erp.Toolkit.ExampleFull
         /// <exception cref="NotImplementedException"></exception>
         private void Dgv_DeleteDgv(object sender, DgvDeleteEventArgs e, string id)
         {
-            // 调用 API 接口，或其他操作
-            Console.WriteLine("点击了删除按钮，待删除 ID 列表：" + id);
+            // Call API interface, or other operations
+            Console.WriteLine("Clicked the Delete button, pending deletion ID list: " + id);
         }
 
         /// <summary>
-        /// 生成示例数据
+        /// Generate sample data
         /// </summary>
         /// <returns></returns>
         private List<SampleData> GenerateSampleData()
@@ -165,10 +162,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 1,
-                    Name = "张明",
+                    Name = "Zhang Ming",
                     Age = 28,
-                    Department = "技术部",
-                    Position = "高级软件工程师",
+                    Department = "Technical Department",
+                    Position = "Senior Software Engineer",
                     Salary = 15000m,
                     JoinDate = new DateTime(2020, 3, 15),
                     Email = "zhangming@doipc.com",
@@ -178,10 +175,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 2,
-                    Name = "李芳",
+                    Name = "Li Fang",
                     Age = 32,
-                    Department = "人力资源部",
-                    Position = "HR经理",
+                    Department = "Human Resources Department",
+                    Position = "HR Manager",
                     Salary = 12000m,
                     JoinDate = new DateTime(2019, 7, 22),
                     Email = "lifang@doipc.com",
@@ -191,10 +188,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 3,
-                    Name = "王强",
+                    Name = "Wang Qiang",
                     Age = 25,
-                    Department = "市场部",
-                    Position = "市场专员",
+                    Department = "Marketing Department",
+                    Position = "Marketing Specialist",
                     Salary = 8000m,
                     JoinDate = new DateTime(2022, 1, 10),
                     Email = "wangqiang@doipc.com",
@@ -204,10 +201,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 4,
-                    Name = "刘小红",
+                    Name = "Liu Xiaohong",
                     Age = 35,
-                    Department = "财务部",
-                    Position = "财务主管",
+                    Department = "Finance Department",
+                    Position = "Finance Supervisor",
                     Salary = 18000m,
                     JoinDate = new DateTime(2018, 5, 6),
                     Email = "liuxiaohong@doipc.com",
@@ -217,10 +214,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 5,
-                    Name = "陈建国",
+                    Name = "Chen Jianguo",
                     Age = 45,
-                    Department = "管理层",
-                    Position = "技术总监",
+                    Department = "Management",
+                    Position = "Technical Director",
                     Salary = 25000m,
                     JoinDate = new DateTime(2015, 11, 30),
                     Email = "chenjianguo@doipc.com",
@@ -230,10 +227,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 6,
-                    Name = "赵婷婷",
+                    Name = "Zhao Tingting",
                     Age = 29,
-                    Department = "设计部",
-                    Position = "UI设计师",
+                    Department = "Design Department",
+                    Position = "UI Designer",
                     Salary = 11000m,
                     JoinDate = new DateTime(2021, 8, 14),
                     Email = "zhaotingting@doipc.com",
@@ -243,10 +240,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 7,
-                    Name = "孙伟",
+                    Name = "Sun Wei",
                     Age = 31,
-                    Department = "技术部",
-                    Position = "后端开发工程师",
+                    Department = "Technical Department",
+                    Position = "Backend Development Engineer",
                     Salary = 14000m,
                     JoinDate = new DateTime(2020, 9, 3),
                     Email = "sunwei@doipc.com",
@@ -256,10 +253,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 8,
-                    Name = "周丽",
+                    Name = "Zhou Li",
                     Age = 27,
-                    Department = "客服部",
-                    Position = "客服主管",
+                    Department = "Customer Service Department",
+                    Position = "Customer Service Supervisor",
                     Salary = 9000m,
                     JoinDate = new DateTime(2021, 12, 1),
                     Email = "zhouli@doipc.com",
@@ -269,10 +266,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 9,
-                    Name = "吴刚",
+                    Name = "Wu Gang",
                     Age = 38,
-                    Department = "运维部",
-                    Position = "系统运维工程师",
+                    Department = "Operations Department",
+                    Position = "System Operations Engineer",
                     Salary = 13000m,
                     JoinDate = new DateTime(2017, 4, 18),
                     Email = "wugang@doipc.com",
@@ -282,10 +279,10 @@ namespace Erp.Toolkit.ExampleFull
                 new SampleData
                 {
                     Id = 10,
-                    Name = "郑美丽",
+                    Name = "Zheng Meili",
                     Age = 26,
-                    Department = "市场部",
-                    Position = "市场策划",
+                    Department = "Marketing Department",
+                    Position = "Marketing Planner",
                     Salary = 8500m,
                     JoinDate = new DateTime(2023, 2, 28),
                     Email = "zhengmeili@doipc.com",
@@ -296,7 +293,7 @@ namespace Erp.Toolkit.ExampleFull
         }
 
         /// <summary>
-        /// 生成项目数据
+        /// Generate project data
         /// </summary>
         /// <param name="employees"></param>
         /// <returns></returns>
@@ -307,7 +304,7 @@ namespace Erp.Toolkit.ExampleFull
 
             foreach (var employee in employees)
             {
-                // 每个员工分配2-5个项目
+                // Assign 2-5 projects to each employee
                 int projectCount = random.Next(2, 6);
 
                 for (int i = 0; i < projectCount; i++)
@@ -318,19 +315,19 @@ namespace Erp.Toolkit.ExampleFull
 
                     string status;
                     if (progress == 0)
-                        status = "未开始";
+                        status = "Not Started";
                     else if (progress == 100)
-                        status = "已完成";
+                        status = "Completed";
                     else if (progress < 50)
-                        status = "进行中";
+                        status = "In Progress";
                     else
-                        status = "延期";
+                        status = "Delayed";
 
                     projects.Add(new ProjectData
                     {
                         Id = projects.Count + 1,
                         UserId = employee.Id,
-                        ProjectName = $"项目-{employee.Name}-{i + 1}",
+                        ProjectName = $"Project-{employee.Name}-{i + 1}",
                         Progress = progress,
                         Status = status,
                         StartDate = startDate,
@@ -344,29 +341,29 @@ namespace Erp.Toolkit.ExampleFull
         }
 
         /// <summary>
-        /// 根据进度获取当前节点
+        /// Get current milestone based on progress
         /// </summary>
         /// <param name="progress"></param>
         /// <returns></returns>
         private string GetMilestoneByProgress(int progress)
         {
             if (progress < 20)
-                return "需求分析";
+                return "Requirements Analysis";
             else if (progress < 40)
-                return "设计阶段";
+                return "Design Phase";
             else if (progress < 60)
-                return "开发阶段";
+                return "Development Phase";
             else if (progress < 80)
-                return "测试阶段";
+                return "Testing Phase";
             else if (progress < 100)
-                return "上线准备";
+                return "Launch Preparation";
             else
-                return "项目完成";
+                return "Project Completed";
         }
     }
 
     /// <summary>
-    /// 示例数据类
+    /// Sample data class
     /// </summary>
     internal class SampleData
     {
@@ -380,12 +377,12 @@ namespace Erp.Toolkit.ExampleFull
         public string Email { get; set; }
         public string Phone { get; set; }
         public bool IsActive { get; set; }
-        public string Status => IsActive ? "在职" : "离职";
+        public string Status => IsActive ? "Active" : "Inactive";
         public int WorkYears => DateTime.Now.Year - JoinDate.Year;
     }
 
     /// <summary>
-    /// 项目数据类
+    /// Project data class
     /// </summary>
     internal class ProjectData
     {

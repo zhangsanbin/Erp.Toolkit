@@ -50,7 +50,7 @@ namespace Erp.Toolkit.Example
             dgv.subview.ProgressColumnName = "Progress";
 
             // Set theme
-            dgv.ThemeStyle = ThemeStyle.blue;
+            dgv.ThemeStyle = ThemeStyle.BlueTheme;
 
             // Custom user menu or toolbar
             List<DgvUserContextMenuStripConfig> menuConfigs = new List<DgvUserContextMenuStripConfig>

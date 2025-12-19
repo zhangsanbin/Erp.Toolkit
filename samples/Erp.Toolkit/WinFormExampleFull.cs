@@ -50,7 +50,7 @@ namespace Erp.Toolkit.ExampleFull
             dgv.subview.ProgressColumnName = "Progress";
 
             // 设置主题
-            dgv.ThemeStyle = ThemeStyle.blue;
+            dgv.ThemeStyle = ThemeStyle.BlueTheme;
 
             // 自定义用户菜单或工具条
             List<DgvUserContextMenuStripConfig> menuConfigs = new List<DgvUserContextMenuStripConfig>
