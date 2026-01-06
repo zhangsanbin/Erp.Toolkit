@@ -76,7 +76,7 @@ dgv.Dock = DockStyle.Fill;
 dgv.FillList(sampleData, this.Name);
 
 // Set theme
-dgv.ThemeStyle = ThemeStyle.blue;
+dgv.ThemeStyle = ThemeStyle.BlueTheme;
 
 // Custom user menu or toolbar
 List<DgvUserContextMenuStripConfig> menuConfigs = new List<DgvUserContextMenuStripConfig>
