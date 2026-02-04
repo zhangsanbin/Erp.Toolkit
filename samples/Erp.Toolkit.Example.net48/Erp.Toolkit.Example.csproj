@@ -36,8 +36,8 @@
     <ApplicationIcon>erp.toolkit.logo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Erp.Toolkit, Version=0.4.7.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>packages\Erp.Toolkit.0.4.7\lib\net48\Erp.Toolkit.dll</HintPath>
+    <Reference Include="Erp.Toolkit, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Erp.Toolkit.0.5.0\lib\net48\Erp.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
