@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Ascending" xml:space="preserve">
+    <value>升序</value>
+  </data>
+  <data name="CancelFilter" xml:space="preserve">
+    <value>取消篩選</value>
+  </data>
+  <data name="ConditionalFormat" xml:space="preserve">
+    <value>條件格式</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>統計</value>
+  </data>
+  <data name="Descending" xml:space="preserve">
+    <value>降序</value>
+  </data>
+  <data name="FieldProperties" xml:space="preserve">
+    <value>欄位屬性</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>篩選</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>查詢</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>列印</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>重新整理</value>
+  </data>
+  <data name="SystemStyle" xml:space="preserve">
+    <value>系統樣式</value>
+  </data>
+  <data name="PrintPreview" xml:space="preserve">
+    <value>列印預覽</value>
+  </data>
+  <data name="PageSetup" xml:space="preserve">
+    <value>頁面設定</value>
+  </data>
+  <data name="CancelAllFilters" xml:space="preserve">
+    <value>取消所有篩選</value>
+  </data>
+  <data name="RestoreLastFilter" xml:space="preserve">
+    <value>返回上次篩選</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>複製</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>匯出</value>
+  </data>
+  <data name="FieldWidth" xml:space="preserve">
+    <value>欄位寬度</value>
+  </data>
+  <data name="HideField" xml:space="preserve">
+    <value>隱藏欄位</value>
+  </data>
+  <data name="UnhideField" xml:space="preserve">
+    <value>取消隱藏欄位</value>
+  </data>
+  <data name="FreezeField" xml:space="preserve">
+    <value>凍結欄位</value>
+  </data>
+  <data name="UnfreezeAllFields" xml:space="preserve">
+    <value>取消所有凍結欄位</value>
+  </data>
+  <data name="AddCustomColumn" xml:space="preserve">
+    <value>新增自訂欄</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>屬性</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>文字篩選器</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>等於</value>
+  </data>
+  <data name="NotEqual" xml:space="preserve">
+    <value>不等於</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>包含</value>
+  </data>
+  <data name="DoesNotContain" xml:space="preserve">
+    <value>不包含</value>
+  </data>
+  <data name="StartsWith" xml:space="preserve">
+    <value>開頭是</value>
+  </data>
+  <data name="DoesNotStartWith" xml:space="preserve">
+    <value>開頭不是</value>
+  </data>
+  <data name="EndsWith" xml:space="preserve">
+    <value>結尾是</value>
+  </data>
+  <data name="DoesNotEndWith" xml:space="preserve">
+    <value>結尾不是</value>
+  </data>
+  <data name="NumberFilter" xml:space="preserve">
+    <value>數字篩選器</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>小於</value>
+  </data>
+  <data name="GreaterThan" xml:space="preserve">
+    <value>大於</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="DateFilter" xml:space="preserve">
+    <value>日期篩選器</value>
+  </data>
+  <data name="Before" xml:space="preserve">
+    <value>之前</value>
+  </data>
+  <data name="After" xml:space="preserve">
+    <value>之後</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>今天</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>昨天</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>下週</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>本週</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>上週</value>
+  </data>
+  <data name="NextMonth" xml:space="preserve">
+    <value>下個月</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>本月</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>上個月</value>
+  </data>
+  <data name="NextQuarter" xml:space="preserve">
+    <value>下一季</value>
+  </data>
+  <data name="ThisQuarter" xml:space="preserve">
+    <value>本季</value>
+  </data>
+  <data name="LastQuarter" xml:space="preserve">
+    <value>上一季</value>
+  </data>
+  <data name="NextYear" xml:space="preserve">
+    <value>明年</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>今年</value>
+  </data>
+  <data name="YearToDate" xml:space="preserve">
+    <value>今年截至目前</value>
+  </data>
+  <data name="LastYear" xml:space="preserve">
+    <value>去年</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修改</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>刪除</value>
+  </data>
+  <data name="DataStatistics" xml:space="preserve">
+    <value>資料統計（彙總運算式管理員）</value>
+  </data>
+  <data name="CategoryField" xml:space="preserve">
+    <value>分類欄位</value>
+  </data>
+  <data name="AggregationExpression" xml:space="preserve">
+    <value>彙總運算式</value>
+  </data>
+  <data name="ColumnName" xml:space="preserve">
+    <value>欄名稱</value>
+  </data>
+  <data name="ExpressionDescription" xml:space="preserve">
+    <value>運算式描述</value>
+  </data>
+  <data name="NewAggregationExpression" xml:space="preserve">
+    <value>新增彙總運算式</value>
+  </data>
+  <data name="StatisticalIndicator" xml:space="preserve">
+    <value>統計指標</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>計次</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>求和</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>乘積</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>最大值</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>最小值</value>
+  </data>
+  <data name="Avg" xml:space="preserve">
+    <value>平均值</value>
+  </data>
+  <data name="SumProduct" xml:space="preserve">
+    <value>乘積求和</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>自訂</value>
+  </data>
+  <data name="StatisticField" xml:space="preserve">
+    <value>統計欄位</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>重新命名</value>
+  </data>
+  <data name="CustomAggregation" xml:space="preserve">
+    <value>自訂彙總運算式</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>新增</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>套用</value>
+  </data>
+  <data name="ConditionalStyleManager" xml:space="preserve">
+    <value>條件樣式管理員</value>
+  </data>
+  <data name="Rules" xml:space="preserve">
+    <value>規則（按照所示順序套用）</value>
+  </data>
+  <data name="RuleFormat" xml:space="preserve">
+    <value>規則格式</value>
+  </data>
+  <data name="NewFormatRule" xml:space="preserve">
+    <value>新增格式規則</value>
+  </data>
+  <data name="SelectRuleType" xml:space="preserve">
+    <value>選擇規則類型</value>
+  </data>
+  <data name="CheckCurrentValue" xml:space="preserve">
+    <value>檢查目前記錄值</value>
+  </data>
+  <data name="ApplyToEntireRow" xml:space="preserve">
+    <value>套用到整列</value>
+  </data>
+  <data name="AllowStyleOverlap" xml:space="preserve">
+    <value>允許條件樣式重疊</value>
+  </data>
+  <data name="RuleAppliesToColumn" xml:space="preserve">
+    <value>條件格式規則適用於此欄</value>
+  </data>
+  <data name="FormatCellsMeetingCriteria" xml:space="preserve">
+    <value>僅為符合以下條件的儲存格設定格式</value>
+  </data>
+  <data name="Between" xml:space="preserve">
+    <value>介於</value>
+  </data>
+  <data name="NotBetween" xml:space="preserve">
+    <value>不介於</value>
+  </data>
+  <data name="GreaterThanOrEqual" xml:space="preserve">
+    <value>大於或等於</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>小於或等於</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>且</value>
+  </data>
+  <data name="FormatPreview" xml:space="preserve">
+    <value>格式預覽</value>
+  </data>
+  <data name="DependentRecordColumn" xml:space="preserve">
+    <value>相依記錄欄</value>
+  </data>
+  <data name="FieldPropertyManager" xml:space="preserve">
+    <value>欄位屬性管理</value>
+  </data>
+  <data name="FieldValue" xml:space="preserve">
+    <value>欄位值</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>顯示名稱</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>顯示</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>寬度</value>
+  </data>
+  <data name="PositionIndex" xml:space="preserve">
+    <value>位置索引</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>唯讀</value>
+  </data>
+  <data name="WidthMode" xml:space="preserve">
+    <value>寬度模式</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>明天</value>
+  </data>
+  <data name="AlignmentStyle" xml:space="preserve">
+    <value>對齊樣式</value>
+  </data>
+  <data name="SortType" xml:space="preserve">
+    <value>排序類型</value>
+  </data>
+  <data name="SortOrder" xml:space="preserve">
+    <value>排序次序</value>
+  </data>
+  <data name="FindAndFilter" xml:space="preserve">
+    <value>查詢與篩選</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>管理員</value>
+  </data>
+  <data name="FindWhat" xml:space="preserve">
+    <value>查詢內容</value>
+  </data>
+  <data name="FindNext" xml:space="preserve">
+    <value>搜尋下一個</value>
+  </data>
+  <data name="SearchScope" xml:space="preserve">
+    <value>查詢範圍</value>
+  </data>
+  <data name="CurrentField" xml:space="preserve">
+    <value>目前欄位</value>
+  </data>
+  <data name="GlobalSearch" xml:space="preserve">
+    <value>全域搜尋</value>
+  </data>
+  <data name="AnyPartOfField" xml:space="preserve">
+    <value>欄位任何部分</value>
+  </data>
+  <data name="EntireField" xml:space="preserve">
+    <value>整個欄位</value>
+  </data>
+  <data name="StartOfField" xml:space="preserve">
+    <value>欄位開頭</value>
+  </data>
+  <data name="EndOfField" xml:space="preserve">
+    <value>欄位結尾</value>
+  </data>
+  <data name="SearchDirection" xml:space="preserve">
+    <value>搜尋方向</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>全部</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>向上</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>向下</value>
+  </data>
+  <data name="CaseSensitive" xml:space="preserve">
+    <value>區分大小寫</value>
+  </data>
+  <data name="SearchByFormat" xml:space="preserve">
+    <value>按格式搜尋欄位</value>
+  </data>
+  <data name="FuzzySearchByFirstLetter" xml:space="preserve">
+    <value>首字母模糊搜尋</value>
+  </data>
+  <data name="MeetAnyCondition" xml:space="preserve">
+    <value>符合任一條件</value>
+  </data>
+  <data name="MenuName" xml:space="preserve">
+    <value>功能表名稱</value>
+  </data>
+  <data name="FilterExpression" xml:space="preserve">
+    <value>篩選運算式</value>
+  </data>
+  <data name="SwitchPrinter" xml:space="preserve">
+    <value>切換印表機</value>
+  </data>
+  <data name="Portrait" xml:space="preserve">
+    <value>直向</value>
+  </data>
+  <data name="Landscape" xml:space="preserve">
+    <value>橫向</value>
+  </data>
+  <data name="ZoomLevel" xml:space="preserve">
+    <value>顯示比例</value>
+  </data>
+  <data name="SinglePage" xml:space="preserve">
+    <value>單頁</value>
+  </data>
+  <data name="TwoPages" xml:space="preserve">
+    <value>雙頁</value>
+  </data>
+  <data name="FourPages" xml:space="preserve">
+    <value>四頁</value>
+  </data>
+  <data name="SixPages" xml:space="preserve">
+    <value>六頁</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>上一頁</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>下一頁</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>關閉</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一個</value>
+  </data>
+  <data name="GoToFirstRecord" xml:space="preserve">
+    <value>移到第一筆記錄</value>
+  </data>
+  <data name="GoToPreviousRecord" xml:space="preserve">
+    <value>移到上一筆記錄</value>
+  </data>
+  <data name="GoToNextRecord" xml:space="preserve">
+    <value>移到下一筆記錄</value>
+  </data>
+  <data name="GoToLastRecord" xml:space="preserve">
+    <value>移到最後一筆記錄</value>
+  </data>
+  <data name="InputTips" xml:space="preserve">
+    <value>輸入內容開始搜尋</value>
+  </data>
+  <data name="CurrentPosition" xml:space="preserve">
+    <value>目前位置</value>
+  </data>
+  <data name="TotalItemCount" xml:space="preserve">
+    <value>總項目數</value>
+  </data>
+  <data name="CompareOtherRecords" xml:space="preserve">
+    <value>比較其他記錄</value>
+  </data>
+  <data name="OperationFailed" xml:space="preserve">
+    <value>操作失敗</value>
+  </data>
+  <data name="ContentCannotBeEmpty" xml:space="preserve">
+    <value>內容不可為空！</value>
+  </data>
+  <data name="InputValueNotNumber" xml:space="preserve">
+    <value>輸入值不是數字！</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>欄位</value>
+  </data>
+  <data name="PrintWidth" xml:space="preserve">
+    <value>列印寬度</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>上移</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>下移</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>清空</value>
+  </data>
+  <data name="MatchMode" xml:space="preserve">
+    <value>匹配模式</value>
+  </data>
+  <data name="FilterContent" xml:space="preserve">
+    <value>篩選內容</value>
+  </data>
+  <data name="FilterScope" xml:space="preserve">
+    <value>篩選範圍</value>
+  </data>
+  <data name="FilterDirection" xml:space="preserve">
+    <value>篩選方向</value>
+  </data>
+  <data name="InfoIncomplete" xml:space="preserve">
+    <value>資訊不完整</value>
+  </data>
+  <data name="SearchContentCannotBeEmpty" xml:space="preserve">
+    <value>搜尋內容不可為空！</value>
+  </data>
+  <data name="FilterContentCannotBeEmpty" xml:space="preserve">
+    <value>篩選內容不可為空！</value>
+  </data>
+  <data name="MenuNameContentCannotBeEmpty" xml:space="preserve">
+    <value>功能表名稱內容不可為空！</value>
+  </data>
+  <data name="PleaseSelectStatisticalField" xml:space="preserve">
+    <value>請選擇需要統計的欄位！</value>
+  </data>
+  <data name="PleaseSelectRenameField" xml:space="preserve">
+    <value>請選擇設定欄位重新命名！</value>
+  </data>
+  <data name="UnknownTypeParameter" xml:space="preserve">
+    <value>未知的類型參數</value>
+  </data>
+  <data name="PleaseSelectAtLeastOneCategoryField" xml:space="preserve">
+    <value>請至少選擇一個，需要分類的欄位！</value>
+  </data>
+  <data name="PleaseAddAtLeastOneAggregationExpression" xml:space="preserve">
+    <value>請至少添加一個，彙總運算式！</value>
+  </data>
+  <data name="FitWindowSize" xml:space="preserve">
+    <value>適應視窗尺寸</value>
+  </data>
+  <data name="PageNumber" xml:space="preserve">
+    <value>頁碼</value>
+  </data>
+  <data name="PrintTime" xml:space="preserve">
+    <value>列印時間</value>
+  </data>
+  <data name="DarkTheme" xml:space="preserve">
+    <value>深色主題</value>
+  </data>
+  <data name="LightTheme" xml:space="preserve">
+    <value>淺色主題</value>
+  </data>
+  <data name="BlueTheme" xml:space="preserve">
+    <value>藍色主題</value>
+  </data>
+  <data name="GreenTheme" xml:space="preserve">
+    <value>綠色主題</value>
+  </data>
+  <data name="OrangeTheme" xml:space="preserve">
+    <value>橙色主題</value>
+  </data>
+  <data name="PurpleTheme" xml:space="preserve">
+    <value>紫色主題</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語</value>
+  </data>
+  <data name="SimplifiedChinese" xml:space="preserve">
+    <value>簡體中文</value>
+  </data>
+  <data name="TraditionalChinese" xml:space="preserve">
+    <value>繁體中文</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>德語</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>法語</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日語</value>
+  </data>
+  <data name="DistinctCount" xml:space="preserve">
+    <value>不重複計數</value>
+  </data>
+  <data name="Variance" xml:space="preserve">
+    <value>變異數</value>
+  </data>
+  <data name="StandardDeviation" xml:space="preserve">
+    <value>標準差</value>
+  </data>
+  <data name="Median" xml:space="preserve">
+    <value>中位數</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>眾數</value>
+  </data>
+  <data name="PopulationVariance" xml:space="preserve">
+    <value>總體方差</value>
+  </data>
+  <data name="PopulationStandardDeviation" xml:space="preserve">
+    <value>總體標準差</value>
+  </data>
+  <data name="Quartile" xml:space="preserve">
+    <value>四分位數</value>
+  </data>
+  <data name="Percentile" xml:space="preserve">
+    <value>百分位數</value>
+  </data>
+  <data name="Skewness" xml:space="preserve">
+    <value>偏度</value>
+  </data>
+  <data name="Kurtosis" xml:space="preserve">
+    <value>峰度</value>
+  </data>
+  <data name="CoefficientOfVariation" xml:space="preserve">
+    <value>變異係數</value>
+  </data>
+  <data name="GeometricMean" xml:space="preserve">
+    <value>幾何平均數</value>
+  </data>
+  <data name="HarmonicMean" xml:space="preserve">
+    <value>調和平均數</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>範圍</value>
+  </data>
+  <data name="SumAbsolute" xml:space="preserve">
+    <value>絕對值求和</value>
+  </data>
+  <data name="SumSquares" xml:space="preserve">
+    <value>平方和</value>
+  </data>
+  <data name="RootMeanSquare" xml:space="preserve">
+    <value>均方根</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>參數</value>
+  </data>
+  <data name="QuartileValueRange" xml:space="preserve">
+    <value>四分位數 (1-3)</value>
+  </data>
+  <data name="PercentileValueRange" xml:space="preserve">
+    <value>百分位數 (0-100)</value>
+  </data>
+  <data name="PercentileValueRangeError" xml:space="preserve">
+    <value>百分位數值必須在0到100之間</value>
+  </data>
+  <data name="InvalidPercentileValue" xml:space="preserve">
+    <value>無效的百分位數值</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>已選取</value>
+  </data>
+</root>

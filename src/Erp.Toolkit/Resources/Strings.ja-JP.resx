@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Ascending" xml:space="preserve">
+    <value>昇順</value>
+  </data>
+  <data name="CancelFilter" xml:space="preserve">
+    <value>フィルター解除</value>
+  </data>
+  <data name="ConditionalFormat" xml:space="preserve">
+    <value>条件付き書式</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>統計</value>
+  </data>
+  <data name="Descending" xml:space="preserve">
+    <value>降順</value>
+  </data>
+  <data name="FieldProperties" xml:space="preserve">
+    <value>フィールドプロパティ</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>フィルター</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>検索</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>印刷</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>更新</value>
+  </data>
+  <data name="SystemStyle" xml:space="preserve">
+    <value>システムスタイル</value>
+  </data>
+  <data name="PrintPreview" xml:space="preserve">
+    <value>印刷プレビュー</value>
+  </data>
+  <data name="PageSetup" xml:space="preserve">
+    <value>ページ設定</value>
+  </data>
+  <data name="CancelAllFilters" xml:space="preserve">
+    <value>すべてのフィルター解除</value>
+  </data>
+  <data name="RestoreLastFilter" xml:space="preserve">
+    <value>前回のフィルターを復元</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>コピー</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>エクスポート</value>
+  </data>
+  <data name="FieldWidth" xml:space="preserve">
+    <value>フィールド幅</value>
+  </data>
+  <data name="HideField" xml:space="preserve">
+    <value>フィールドを非表示</value>
+  </data>
+  <data name="UnhideField" xml:space="preserve">
+    <value>フィールドを表示</value>
+  </data>
+  <data name="FreezeField" xml:space="preserve">
+    <value>フィールドを固定</value>
+  </data>
+  <data name="UnfreezeAllFields" xml:space="preserve">
+    <value>すべてのフィールドの固定を解除</value>
+  </data>
+  <data name="AddCustomColumn" xml:space="preserve">
+    <value>カスタム列の追加</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>プロパティ</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>テキストフィルター</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>等しい</value>
+  </data>
+  <data name="NotEqual" xml:space="preserve">
+    <value>等しくない</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>含む</value>
+  </data>
+  <data name="DoesNotContain" xml:space="preserve">
+    <value>含まない</value>
+  </data>
+  <data name="StartsWith" xml:space="preserve">
+    <value>始まりが</value>
+  </data>
+  <data name="DoesNotStartWith" xml:space="preserve">
+    <value>始まりが一致しない</value>
+  </data>
+  <data name="EndsWith" xml:space="preserve">
+    <value>末尾が</value>
+  </data>
+  <data name="DoesNotEndWith" xml:space="preserve">
+    <value>末尾が一致しない</value>
+  </data>
+  <data name="NumberFilter" xml:space="preserve">
+    <value>数値フィルター</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>より小さい</value>
+  </data>
+  <data name="GreaterThan" xml:space="preserve">
+    <value>より大きい</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>期間</value>
+  </data>
+  <data name="DateFilter" xml:space="preserve">
+    <value>日付フィルター</value>
+  </data>
+  <data name="Before" xml:space="preserve">
+    <value>以前</value>
+  </data>
+  <data name="After" xml:space="preserve">
+    <value>以降</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>今日</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>昨日</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>来週</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>今週</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>先週</value>
+  </data>
+  <data name="NextMonth" xml:space="preserve">
+    <value>来月</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>今月</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>先月</value>
+  </data>
+  <data name="NextQuarter" xml:space="preserve">
+    <value>来期</value>
+  </data>
+  <data name="ThisQuarter" xml:space="preserve">
+    <value>今期</value>
+  </data>
+  <data name="LastQuarter" xml:space="preserve">
+    <value>前期</value>
+  </data>
+  <data name="NextYear" xml:space="preserve">
+    <value>来年</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>今年</value>
+  </data>
+  <data name="YearToDate" xml:space="preserve">
+    <value>今年現在</value>
+  </data>
+  <data name="LastYear" xml:space="preserve">
+    <value>去年</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>新規</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>修正</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>削除</value>
+  </data>
+  <data name="DataStatistics" xml:space="preserve">
+    <value>データ統計(集計式マネージャー)</value>
+  </data>
+  <data name="CategoryField" xml:space="preserve">
+    <value>カテゴリーフィールド</value>
+  </data>
+  <data name="AggregationExpression" xml:space="preserve">
+    <value>集計式</value>
+  </data>
+  <data name="ColumnName" xml:space="preserve">
+    <value>列名</value>
+  </data>
+  <data name="ExpressionDescription" xml:space="preserve">
+    <value>式の説明</value>
+  </data>
+  <data name="NewAggregationExpression" xml:space="preserve">
+    <value>新規集計式</value>
+  </data>
+  <data name="StatisticalIndicator" xml:space="preserve">
+    <value>統計指標</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>カウント</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>合計</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>積</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>最大値</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>最小値</value>
+  </data>
+  <data name="Avg" xml:space="preserve">
+    <value>平均値</value>
+  </data>
+  <data name="SumProduct" xml:space="preserve">
+    <value>積の合計</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>カスタム</value>
+  </data>
+  <data name="StatisticField" xml:space="preserve">
+    <value>統計フィールド</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>名前変更</value>
+  </data>
+  <data name="CustomAggregation" xml:space="preserve">
+    <value>カスタム集計式</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>追加</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>キャンセル</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>適用</value>
+  </data>
+  <data name="ConditionalStyleManager" xml:space="preserve">
+    <value>条件付きスタイルマネージャー</value>
+  </data>
+  <data name="Rules" xml:space="preserve">
+    <value>ルール(表示順に適用)</value>
+  </data>
+  <data name="RuleFormat" xml:space="preserve">
+    <value>ルール書式</value>
+  </data>
+  <data name="NewFormatRule" xml:space="preserve">
+    <value>新規書式ルール</value>
+  </data>
+  <data name="SelectRuleType" xml:space="preserve">
+    <value>ルールタイプの選択</value>
+  </data>
+  <data name="CheckCurrentValue" xml:space="preserve">
+    <value>現在のレコード値を確認</value>
+  </data>
+  <data name="ApplyToEntireRow" xml:space="preserve">
+    <value>行全体に適用</value>
+  </data>
+  <data name="AllowStyleOverlap" xml:space="preserve">
+    <value>条件付きスタイルの重ね合わせを許可</value>
+  </data>
+  <data name="RuleAppliesToColumn" xml:space="preserve">
+    <value>条件付き書式ルールはこの列に適用</value>
+  </data>
+  <data name="FormatCellsMeetingCriteria" xml:space="preserve">
+    <value>以下の条件を満たすセルのみ書式設定</value>
+  </data>
+  <data name="Between" xml:space="preserve">
+    <value>～の間</value>
+  </data>
+  <data name="NotBetween" xml:space="preserve">
+    <value>～の間ではない</value>
+  </data>
+  <data name="GreaterThanOrEqual" xml:space="preserve">
+    <value>以上</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>以下</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>かつ</value>
+  </data>
+  <data name="FormatPreview" xml:space="preserve">
+    <value>書式プレビュー</value>
+  </data>
+  <data name="DependentRecordColumn" xml:space="preserve">
+    <value>依存レコード列</value>
+  </data>
+  <data name="FieldPropertyManager" xml:space="preserve">
+    <value>フィールドプロパティマネージャー</value>
+  </data>
+  <data name="FieldValue" xml:space="preserve">
+    <value>フィールド値</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>表示名</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>表示</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>幅</value>
+  </data>
+  <data name="PositionIndex" xml:space="preserve">
+    <value>位置インデックス</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>読み取り専用</value>
+  </data>
+  <data name="WidthMode" xml:space="preserve">
+    <value>幅モード</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>明日</value>
+  </data>
+  <data name="AlignmentStyle" xml:space="preserve">
+    <value>配置スタイル</value>
+  </data>
+  <data name="SortType" xml:space="preserve">
+    <value>ソートタイプ</value>
+  </data>
+  <data name="SortOrder" xml:space="preserve">
+    <value>ソート順序</value>
+  </data>
+  <data name="FindAndFilter" xml:space="preserve">
+    <value>検索とフィルター</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>マネージャー</value>
+  </data>
+  <data name="FindWhat" xml:space="preserve">
+    <value>検索内容</value>
+  </data>
+  <data name="FindNext" xml:space="preserve">
+    <value>次を検索</value>
+  </data>
+  <data name="SearchScope" xml:space="preserve">
+    <value>検索範囲</value>
+  </data>
+  <data name="CurrentField" xml:space="preserve">
+    <value>現在のフィールド</value>
+  </data>
+  <data name="GlobalSearch" xml:space="preserve">
+    <value>グローバル検索</value>
+  </data>
+  <data name="AnyPartOfField" xml:space="preserve">
+    <value>フィールドの任意の部分</value>
+  </data>
+  <data name="EntireField" xml:space="preserve">
+    <value>フィールド全体</value>
+  </data>
+  <data name="StartOfField" xml:space="preserve">
+    <value>フィールドの先頭</value>
+  </data>
+  <data name="EndOfField" xml:space="preserve">
+    <value>フィールドの末尾</value>
+  </data>
+  <data name="SearchDirection" xml:space="preserve">
+    <value>検索方向</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>すべて</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>上方向</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>下方向</value>
+  </data>
+  <data name="CaseSensitive" xml:space="preserve">
+    <value>大文字小文字を区別</value>
+  </data>
+  <data name="SearchByFormat" xml:space="preserve">
+    <value>書式で検索</value>
+  </data>
+  <data name="FuzzySearchByFirstLetter" xml:space="preserve">
+    <value>頭文字あいまい検索</value>
+  </data>
+  <data name="MeetAnyCondition" xml:space="preserve">
+    <value>いずれかの条件を満たす</value>
+  </data>
+  <data name="MenuName" xml:space="preserve">
+    <value>メニュー名</value>
+  </data>
+  <data name="FilterExpression" xml:space="preserve">
+    <value>フィルター式</value>
+  </data>
+  <data name="SwitchPrinter" xml:space="preserve">
+    <value>プリンター切り替え</value>
+  </data>
+  <data name="Portrait" xml:space="preserve">
+    <value>縦</value>
+  </data>
+  <data name="Landscape" xml:space="preserve">
+    <value>横</value>
+  </data>
+  <data name="ZoomLevel" xml:space="preserve">
+    <value>表示倍率</value>
+  </data>
+  <data name="SinglePage" xml:space="preserve">
+    <value>1ページ</value>
+  </data>
+  <data name="TwoPages" xml:space="preserve">
+    <value>2ページ</value>
+  </data>
+  <data name="FourPages" xml:space="preserve">
+    <value>4ページ</value>
+  </data>
+  <data name="SixPages" xml:space="preserve">
+    <value>6ページ</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>前のページ</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>次のページ</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>閉じる</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>次の</value>
+  </data>
+  <data name="GoToFirstRecord" xml:space="preserve">
+    <value>最初のレコードに移動</value>
+  </data>
+  <data name="GoToPreviousRecord" xml:space="preserve">
+    <value>前のレコードに移動</value>
+  </data>
+  <data name="GoToNextRecord" xml:space="preserve">
+    <value>次のレコードに移動</value>
+  </data>
+  <data name="GoToLastRecord" xml:space="preserve">
+    <value>最後のレコードに移動</value>
+  </data>
+  <data name="InputTips" xml:space="preserve">
+    <value>内容を入力して検索を開始</value>
+  </data>
+  <data name="CurrentPosition" xml:space="preserve">
+    <value>現在の位置</value>
+  </data>
+  <data name="TotalItemCount" xml:space="preserve">
+    <value>総件数</value>
+  </data>
+  <data name="CompareOtherRecords" xml:space="preserve">
+    <value>他のレコードと比較</value>
+  </data>
+  <data name="OperationFailed" xml:space="preserve">
+    <value>操作に失敗しました</value>
+  </data>
+  <data name="ContentCannotBeEmpty" xml:space="preserve">
+    <value>内容は空にできません！</value>
+  </data>
+  <data name="InputValueNotNumber" xml:space="preserve">
+    <value>入力値は数字ではありません！</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>フィールド</value>
+  </data>
+  <data name="PrintWidth" xml:space="preserve">
+    <value>プリント幅</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>上に移動</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>下に移動</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>クリア</value>
+  </data>
+  <data name="MatchMode" xml:space="preserve">
+    <value>マッチモード</value>
+  </data>
+  <data name="FilterContent" xml:space="preserve">
+    <value>フィルターコンテンツ</value>
+  </data>
+  <data name="FilterScope" xml:space="preserve">
+    <value>フィルター範囲</value>
+  </data>
+  <data name="FilterDirection" xml:space="preserve">
+    <value>フィルター方向</value>
+  </data>
+  <data name="InfoIncomplete" xml:space="preserve">
+    <value>情報が不完全です</value>
+  </data>
+  <data name="SearchContentCannotBeEmpty" xml:space="preserve">
+    <value>検索コンテンツは空にできません！</value>
+  </data>
+  <data name="FilterContentCannotBeEmpty" xml:space="preserve">
+    <value>フィルターコンテンツは空にできません！</value>
+  </data>
+  <data name="MenuNameContentCannotBeEmpty" xml:space="preserve">
+    <value>メニュー名コンテンツは空にできません！</value>
+  </data>
+  <data name="PleaseSelectStatisticalField" xml:space="preserve">
+    <value>統計対象のフィールドを選択してください！</value>
+  </data>
+  <data name="PleaseSelectRenameField" xml:space="preserve">
+    <value>フィールド名変更設定を選択してください！</value>
+  </data>
+  <data name="UnknownTypeParameter" xml:space="preserve">
+    <value>未知のタイプパラメーター</value>
+  </data>
+  <data name="PleaseSelectAtLeastOneCategoryField" xml:space="preserve">
+    <value>少なくとも 1 つの分類対象のフィールドを選択してください！</value>
+  </data>
+  <data name="PleaseAddAtLeastOneAggregationExpression" xml:space="preserve">
+    <value>少なくとも 1 つの集計式を追加してください！</value>
+  </data>
+  <data name="FitWindowSize" xml:space="preserve">
+    <value>ウィンドウサイズ適合</value>
+  </data>
+  <data name="PageNumber" xml:space="preserve">
+    <value>ページ番号</value>
+  </data>
+  <data name="PrintTime" xml:space="preserve">
+    <value>印刷時間</value>
+  </data>
+  <data name="DarkTheme" xml:space="preserve">
+    <value>ダークテーマ</value>
+  </data>
+  <data name="LightTheme" xml:space="preserve">
+    <value>ライトテーマ</value>
+  </data>
+  <data name="BlueTheme" xml:space="preserve">
+    <value>ブルーテーマ</value>
+  </data>
+  <data name="GreenTheme" xml:space="preserve">
+    <value>グリーンテーマ</value>
+  </data>
+  <data name="OrangeTheme" xml:space="preserve">
+    <value>オレンジテーマ</value>
+  </data>
+  <data name="PurpleTheme" xml:space="preserve">
+    <value>パープルテーマ</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>英語（えいご）</value>
+  </data>
+  <data name="SimplifiedChinese" xml:space="preserve">
+    <value>簡体字中国語（かんたいじちゅうごくご）</value>
+  </data>
+  <data name="TraditionalChinese" xml:space="preserve">
+    <value>繁体字中国語（ぼんたいじちゅうごくご）</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>ドイツ語</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>フランス語</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>日本語（にほんご）</value>
+  </data>
+  <data name="DistinctCount" xml:space="preserve">
+    <value>重複なし件数（ちょうふくなしけんすう）</value>
+  </data>
+  <data name="Variance" xml:space="preserve">
+    <value>分散（ぶんさん）</value>
+  </data>
+  <data name="StandardDeviation" xml:space="preserve">
+    <value>標準偏差（ひょうじゅんへんさ）</value>
+  </data>
+  <data name="Median" xml:space="preserve">
+    <value>中央値（ちゅうおうち）</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>最頻値（さいひんち）</value>
+  </data>
+  <data name="PopulationVariance" xml:space="preserve">
+    <value>母分散</value>
+  </data>
+  <data name="PopulationStandardDeviation" xml:space="preserve">
+    <value>母標準偏差</value>
+  </data>
+  <data name="Quartile" xml:space="preserve">
+    <value>四分位数</value>
+  </data>
+  <data name="Percentile" xml:space="preserve">
+    <value>百分位数</value>
+  </data>
+  <data name="Skewness" xml:space="preserve">
+    <value>歪度</value>
+  </data>
+  <data name="Kurtosis" xml:space="preserve">
+    <value>尖度</value>
+  </data>
+  <data name="CoefficientOfVariation" xml:space="preserve">
+    <value>変動係数</value>
+  </data>
+  <data name="GeometricMean" xml:space="preserve">
+    <value>幾何平均</value>
+  </data>
+  <data name="HarmonicMean" xml:space="preserve">
+    <value>調和平均</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>範囲</value>
+  </data>
+  <data name="SumAbsolute" xml:space="preserve">
+    <value>絶対値合計</value>
+  </data>
+  <data name="SumSquares" xml:space="preserve">
+    <value>平方和</value>
+  </data>
+  <data name="RootMeanSquare" xml:space="preserve">
+    <value>二乗平均平方根</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>パラメータ</value>
+  </data>
+  <data name="QuartileValueRange" xml:space="preserve">
+    <value>四分位数 (1-3)</value>
+  </data>
+  <data name="PercentileValueRange" xml:space="preserve">
+    <value>百分位数 (0-100)</value>
+  </data>
+  <data name="PercentileValueRangeError" xml:space="preserve">
+    <value>百分位数の値は0から100の間でなければなりません</value>
+  </data>
+  <data name="InvalidPercentileValue" xml:space="preserve">
+    <value>無効な百分位数の値です</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>選択済み</value>
+  </data>
+</root>

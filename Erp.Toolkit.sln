@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erp.Toolkit", "src\Erp.Toolkit\Erp.Toolkit.csproj", "{102C19EC-5FB6-4232-A8BA-90304304E1F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Erp.Toolkit.Example", "src\Erp.Toolkit.Example\Erp.Toolkit.Example.csproj", "{21C70FA7-10EF-4213-8BC8-B5F312F81442}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{102C19EC-5FB6-4232-A8BA-90304304E1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{102C19EC-5FB6-4232-A8BA-90304304E1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{102C19EC-5FB6-4232-A8BA-90304304E1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{102C19EC-5FB6-4232-A8BA-90304304E1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C70FA7-10EF-4213-8BC8-B5F312F81442}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C70FA7-10EF-4213-8BC8-B5F312F81442}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C70FA7-10EF-4213-8BC8-B5F312F81442}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C70FA7-10EF-4213-8BC8-B5F312F81442}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {48483758-5FD5-4571-B638-654BCB593909}
+	EndGlobalSection
+EndGlobal

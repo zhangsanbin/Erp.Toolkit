@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Ascending" xml:space="preserve">
+    <value>Aufsteigend</value>
+  </data>
+  <data name="CancelFilter" xml:space="preserve">
+    <value>Filter aufheben</value>
+  </data>
+  <data name="ConditionalFormat" xml:space="preserve">
+    <value>Bedingte Formatierung</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistik</value>
+  </data>
+  <data name="Descending" xml:space="preserve">
+    <value>Absteigend</value>
+  </data>
+  <data name="FieldProperties" xml:space="preserve">
+    <value>Feldeigenschaften</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Suchen</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Drucken</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Aktualisieren</value>
+  </data>
+  <data name="SystemStyle" xml:space="preserve">
+    <value>Systemstil</value>
+  </data>
+  <data name="PrintPreview" xml:space="preserve">
+    <value>Druckvorschau</value>
+  </data>
+  <data name="PageSetup" xml:space="preserve">
+    <value>Seitenaufbau</value>
+  </data>
+  <data name="CancelAllFilters" xml:space="preserve">
+    <value>Alle Filter aufheben</value>
+  </data>
+  <data name="RestoreLastFilter" xml:space="preserve">
+    <value>Letzten Filter wiederherstellen</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Kopieren</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Exportieren</value>
+  </data>
+  <data name="FieldWidth" xml:space="preserve">
+    <value>Feldbreite</value>
+  </data>
+  <data name="HideField" xml:space="preserve">
+    <value>Feld ausblenden</value>
+  </data>
+  <data name="UnhideField" xml:space="preserve">
+    <value>Feld einblenden</value>
+  </data>
+  <data name="FreezeField" xml:space="preserve">
+    <value>Feld einfrieren</value>
+  </data>
+  <data name="UnfreezeAllFields" xml:space="preserve">
+    <value>Alle Felder auftauen</value>
+  </data>
+  <data name="AddCustomColumn" xml:space="preserve">
+    <value>Benutzerdefinierte Spalte hinzufügen</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Eigenschaften</value>
+  </data>
+  <data name="TextFilter" xml:space="preserve">
+    <value>Textfilter</value>
+  </data>
+  <data name="Equal" xml:space="preserve">
+    <value>Gleich</value>
+  </data>
+  <data name="NotEqual" xml:space="preserve">
+    <value>Nicht gleich</value>
+  </data>
+  <data name="Contains" xml:space="preserve">
+    <value>Enthält</value>
+  </data>
+  <data name="DoesNotContain" xml:space="preserve">
+    <value>Enthält nicht</value>
+  </data>
+  <data name="StartsWith" xml:space="preserve">
+    <value>Beginnt mit</value>
+  </data>
+  <data name="DoesNotStartWith" xml:space="preserve">
+    <value>Beginnt nicht mit</value>
+  </data>
+  <data name="EndsWith" xml:space="preserve">
+    <value>Endet mit</value>
+  </data>
+  <data name="DoesNotEndWith" xml:space="preserve">
+    <value>Endet nicht mit</value>
+  </data>
+  <data name="NumberFilter" xml:space="preserve">
+    <value>Zahlfilter</value>
+  </data>
+  <data name="LessThan" xml:space="preserve">
+    <value>Kleiner als</value>
+  </data>
+  <data name="GreaterThan" xml:space="preserve">
+    <value>Größer als</value>
+  </data>
+  <data name="Period" xml:space="preserve">
+    <value>Periode</value>
+  </data>
+  <data name="DateFilter" xml:space="preserve">
+    <value>Datumfilter</value>
+  </data>
+  <data name="Before" xml:space="preserve">
+    <value>Vor</value>
+  </data>
+  <data name="After" xml:space="preserve">
+    <value>Nach</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Heute</value>
+  </data>
+  <data name="Yesterday" xml:space="preserve">
+    <value>Gestern</value>
+  </data>
+  <data name="NextWeek" xml:space="preserve">
+    <value>Nächste Woche</value>
+  </data>
+  <data name="ThisWeek" xml:space="preserve">
+    <value>Diese Woche</value>
+  </data>
+  <data name="LastWeek" xml:space="preserve">
+    <value>Letzte Woche</value>
+  </data>
+  <data name="NextMonth" xml:space="preserve">
+    <value>Nächster Monat</value>
+  </data>
+  <data name="ThisMonth" xml:space="preserve">
+    <value>Dieser Monat</value>
+  </data>
+  <data name="LastMonth" xml:space="preserve">
+    <value>Letzter Monat</value>
+  </data>
+  <data name="NextQuarter" xml:space="preserve">
+    <value>Nächstes Quartal</value>
+  </data>
+  <data name="ThisQuarter" xml:space="preserve">
+    <value>Dieses Quartal</value>
+  </data>
+  <data name="LastQuarter" xml:space="preserve">
+    <value>Letztes Quartal</value>
+  </data>
+  <data name="NextYear" xml:space="preserve">
+    <value>Nächstes Jahr</value>
+  </data>
+  <data name="ThisYear" xml:space="preserve">
+    <value>Dieses Jahr</value>
+  </data>
+  <data name="YearToDate" xml:space="preserve">
+    <value>Jahr bis heute</value>
+  </data>
+  <data name="LastYear" xml:space="preserve">
+    <value>Letztes Jahr</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Neu</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Ändern</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="DataStatistics" xml:space="preserve">
+    <value>Datenstatistik (Aggregationsmanager)</value>
+  </data>
+  <data name="CategoryField" xml:space="preserve">
+    <value>Kategorie Feld</value>
+  </data>
+  <data name="AggregationExpression" xml:space="preserve">
+    <value>Aggregationsausdruck</value>
+  </data>
+  <data name="ColumnName" xml:space="preserve">
+    <value>Spaltenname</value>
+  </data>
+  <data name="ExpressionDescription" xml:space="preserve">
+    <value>Ausdrucksbeschreibung</value>
+  </data>
+  <data name="NewAggregationExpression" xml:space="preserve">
+    <value>Neuer Aggregationsausdruck</value>
+  </data>
+  <data name="StatisticalIndicator" xml:space="preserve">
+    <value>Statistischer Indikator</value>
+  </data>
+  <data name="Count" xml:space="preserve">
+    <value>Zählen</value>
+  </data>
+  <data name="Sum" xml:space="preserve">
+    <value>Summe</value>
+  </data>
+  <data name="Product" xml:space="preserve">
+    <value>Produkt</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>Maximum</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>Minimum</value>
+  </data>
+  <data name="Avg" xml:space="preserve">
+    <value>Durchschnitt</value>
+  </data>
+  <data name="SumProduct" xml:space="preserve">
+    <value>Produktsumme</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Benutzerdefiniert</value>
+  </data>
+  <data name="StatisticField" xml:space="preserve">
+    <value>Statistikfeld</value>
+  </data>
+  <data name="Rename" xml:space="preserve">
+    <value>Umbenennen</value>
+  </data>
+  <data name="CustomAggregation" xml:space="preserve">
+    <value>Benutzerdefinierter Aggregationsausdruck</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Hinzufügen</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Abbrechen</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>Anwenden</value>
+  </data>
+  <data name="ConditionalStyleManager" xml:space="preserve">
+    <value>Bedingter Stilmanager</value>
+  </data>
+  <data name="Rules" xml:space="preserve">
+    <value>Regeln (in Reihenfolge angewendet)</value>
+  </data>
+  <data name="RuleFormat" xml:space="preserve">
+    <value>Regelformat</value>
+  </data>
+  <data name="NewFormatRule" xml:space="preserve">
+    <value>Neue Formatregel</value>
+  </data>
+  <data name="SelectRuleType" xml:space="preserve">
+    <value>Regeltyp auswählen</value>
+  </data>
+  <data name="CheckCurrentValue" xml:space="preserve">
+    <value>Aktuellen Wert prüfen</value>
+  </data>
+  <data name="ApplyToEntireRow" xml:space="preserve">
+    <value>Auf gesamte Zeile anwenden</value>
+  </data>
+  <data name="AllowStyleOverlap" xml:space="preserve">
+    <value>Stilüberlappung erlauben</value>
+  </data>
+  <data name="RuleAppliesToColumn" xml:space="preserve">
+    <value>Regel gilt für diese Spalte</value>
+  </data>
+  <data name="FormatCellsMeetingCriteria" xml:space="preserve">
+    <value>Zellen formatieren, die Kriterien erfüllen</value>
+  </data>
+  <data name="Between" xml:space="preserve">
+    <value>Zwischen</value>
+  </data>
+  <data name="NotBetween" xml:space="preserve">
+    <value>Nicht zwischen</value>
+  </data>
+  <data name="GreaterThanOrEqual" xml:space="preserve">
+    <value>Größer oder gleich</value>
+  </data>
+  <data name="LessThanOrEqual" xml:space="preserve">
+    <value>Kleiner oder gleich</value>
+  </data>
+  <data name="And" xml:space="preserve">
+    <value>Und</value>
+  </data>
+  <data name="FormatPreview" xml:space="preserve">
+    <value>Formatvorschau</value>
+  </data>
+  <data name="DependentRecordColumn" xml:space="preserve">
+    <value>Abhängige Datensatzspalte</value>
+  </data>
+  <data name="FieldPropertyManager" xml:space="preserve">
+    <value>Feldeigenschaftsmanager</value>
+  </data>
+  <data name="FieldValue" xml:space="preserve">
+    <value>Feldwert</value>
+  </data>
+  <data name="DisplayName" xml:space="preserve">
+    <value>Anzeigename</value>
+  </data>
+  <data name="Display" xml:space="preserve">
+    <value>Anzeigen</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>Breite</value>
+  </data>
+  <data name="PositionIndex" xml:space="preserve">
+    <value>Positionsindex</value>
+  </data>
+  <data name="ReadOnly" xml:space="preserve">
+    <value>Nur lesen</value>
+  </data>
+  <data name="WidthMode" xml:space="preserve">
+    <value>Breitenmodus</value>
+  </data>
+  <data name="Tomorrow" xml:space="preserve">
+    <value>Morgen</value>
+  </data>
+  <data name="AlignmentStyle" xml:space="preserve">
+    <value>Ausrichtungsstil</value>
+  </data>
+  <data name="SortType" xml:space="preserve">
+    <value>Sortiertyp</value>
+  </data>
+  <data name="SortOrder" xml:space="preserve">
+    <value>Sortierreihenfolge</value>
+  </data>
+  <data name="FindAndFilter" xml:space="preserve">
+    <value>Suchen und Filtern</value>
+  </data>
+  <data name="Manager" xml:space="preserve">
+    <value>Manager</value>
+  </data>
+  <data name="FindWhat" xml:space="preserve">
+    <value>Was suchen</value>
+  </data>
+  <data name="FindNext" xml:space="preserve">
+    <value>Weiter suchen</value>
+  </data>
+  <data name="SearchScope" xml:space="preserve">
+    <value>Suchbereich</value>
+  </data>
+  <data name="CurrentField" xml:space="preserve">
+    <value>Aktuelles Feld</value>
+  </data>
+  <data name="GlobalSearch" xml:space="preserve">
+    <value>Globale Suche</value>
+  </data>
+  <data name="AnyPartOfField" xml:space="preserve">
+    <value>Beliebiger Teil des Feldes</value>
+  </data>
+  <data name="EntireField" xml:space="preserve">
+    <value>Ganzes Feld</value>
+  </data>
+  <data name="StartOfField" xml:space="preserve">
+    <value>Anfang des Feldes</value>
+  </data>
+  <data name="EndOfField" xml:space="preserve">
+    <value>Ende des Feldes</value>
+  </data>
+  <data name="SearchDirection" xml:space="preserve">
+    <value>Suchrichtung</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>Alle</value>
+  </data>
+  <data name="Up" xml:space="preserve">
+    <value>Nach oben</value>
+  </data>
+  <data name="Down" xml:space="preserve">
+    <value>Nach unten</value>
+  </data>
+  <data name="CaseSensitive" xml:space="preserve">
+    <value>Groß-/Kleinschreibung berücksichtigen</value>
+  </data>
+  <data name="SearchByFormat" xml:space="preserve">
+    <value>Nach Format suchen</value>
+  </data>
+  <data name="FuzzySearchByFirstLetter" xml:space="preserve">
+    <value>Unscharfe Suche nach erstem Buchstaben</value>
+  </data>
+  <data name="MeetAnyCondition" xml:space="preserve">
+    <value>Beliebige Bedingung erfüllen</value>
+  </data>
+  <data name="MenuName" xml:space="preserve">
+    <value>Menüname</value>
+  </data>
+  <data name="FilterExpression" xml:space="preserve">
+    <value>Filterausdruck</value>
+  </data>
+  <data name="SwitchPrinter" xml:space="preserve">
+    <value>Drucker wechseln</value>
+  </data>
+  <data name="Portrait" xml:space="preserve">
+    <value>Hochformat</value>
+  </data>
+  <data name="Landscape" xml:space="preserve">
+    <value>Querformat</value>
+  </data>
+  <data name="ZoomLevel" xml:space="preserve">
+    <value>Anzeigeskala</value>
+  </data>
+  <data name="SinglePage" xml:space="preserve">
+    <value>Einzelne Seite</value>
+  </data>
+  <data name="TwoPages" xml:space="preserve">
+    <value>Zwei Seiten</value>
+  </data>
+  <data name="FourPages" xml:space="preserve">
+    <value>Vier Seiten</value>
+  </data>
+  <data name="SixPages" xml:space="preserve">
+    <value>Sechs Seiten</value>
+  </data>
+  <data name="PreviousPage" xml:space="preserve">
+    <value>Vorherige Seite</value>
+  </data>
+  <data name="NextPage" xml:space="preserve">
+    <value>Nächste Seite</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Schließen</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Nächstes</value>
+  </data>
+  <data name="GoToFirstRecord" xml:space="preserve">
+    <value>Gehe zum ersten Datensatz</value>
+  </data>
+  <data name="GoToPreviousRecord" xml:space="preserve">
+    <value>Gehe zum vorherigen Datensatz</value>
+  </data>
+  <data name="GoToNextRecord" xml:space="preserve">
+    <value>Gehe zum nächsten Datensatz</value>
+  </data>
+  <data name="GoToLastRecord" xml:space="preserve">
+    <value>Gehe zum letzten Datensatz</value>
+  </data>
+  <data name="InputTips" xml:space="preserve">
+    <value>Geben Sie Inhalt ein, um die Suche zu starten</value>
+  </data>
+  <data name="CurrentPosition" xml:space="preserve">
+    <value>Aktuelle Position</value>
+  </data>
+  <data name="TotalItemCount" xml:space="preserve">
+    <value>Gesamtanzahl der Elemente</value>
+  </data>
+  <data name="CompareOtherRecords" xml:space="preserve">
+    <value>Andere Datensätze vergleichen</value>
+  </data>
+  <data name="OperationFailed" xml:space="preserve">
+    <value>Operation fehlgeschlagen</value>
+  </data>
+  <data name="ContentCannotBeEmpty" xml:space="preserve">
+    <value>Inhalt darf nicht leer sein!</value>
+  </data>
+  <data name="InputValueNotNumber" xml:space="preserve">
+    <value>Eingabewert ist keine Zahl!</value>
+  </data>
+  <data name="Field" xml:space="preserve">
+    <value>Feld</value>
+  </data>
+  <data name="PrintWidth" xml:space="preserve">
+    <value>Druckbreite</value>
+  </data>
+  <data name="MoveUp" xml:space="preserve">
+    <value>Nach oben verschieben</value>
+  </data>
+  <data name="MoveDown" xml:space="preserve">
+    <value>Nach unten verschieben</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Leeren</value>
+  </data>
+  <data name="MatchMode" xml:space="preserve">
+    <value>Abgleichmodus</value>
+  </data>
+  <data name="FilterContent" xml:space="preserve">
+    <value>Filterinhalt</value>
+  </data>
+  <data name="FilterScope" xml:space="preserve">
+    <value>Filterbereich</value>
+  </data>
+  <data name="FilterDirection" xml:space="preserve">
+    <value>Filterrichtung</value>
+  </data>
+  <data name="InfoIncomplete" xml:space="preserve">
+    <value>Information unvollständig</value>
+  </data>
+  <data name="SearchContentCannotBeEmpty" xml:space="preserve">
+    <value>Suchinhalt darf nicht leer sein!</value>
+  </data>
+  <data name="FilterContentCannotBeEmpty" xml:space="preserve">
+    <value>Filterinhalt darf nicht leer sein!</value>
+  </data>
+  <data name="MenuNameContentCannotBeEmpty" xml:space="preserve">
+    <value>Menünamen-Inhalt darf nicht leer sein!</value>
+  </data>
+  <data name="PleaseSelectStatisticalField" xml:space="preserve">
+    <value>Bitte wählen Sie das zu statistischende Feld aus!</value>
+  </data>
+  <data name="PleaseSelectRenameField" xml:space="preserve">
+    <value>Bitte wählen Sie zum Einstellen des Feldumbenennens aus!</value>
+  </data>
+  <data name="UnknownTypeParameter" xml:space="preserve">
+    <value>Unbekannter Typenparameter</value>
+  </data>
+  <data name="PleaseSelectAtLeastOneCategoryField" xml:space="preserve">
+    <value>Bitte wählen Sie mindestens ein zu kategorisierendes Feld aus!</value>
+  </data>
+  <data name="PleaseAddAtLeastOneAggregationExpression" xml:space="preserve">
+    <value>Bitte fügen Sie mindestens einen Aggregationsausdruck hinzu!</value>
+  </data>
+  <data name="FitWindowSize" xml:space="preserve">
+    <value>Fenstergröße anpassen</value>
+  </data>
+  <data name="PageNumber" xml:space="preserve">
+    <value>Seitennummer</value>
+  </data>
+  <data name="PrintTime" xml:space="preserve">
+    <value>Druckzeit</value>
+  </data>
+  <data name="DarkTheme" xml:space="preserve">
+    <value>Dunkles Theme</value>
+  </data>
+  <data name="LightTheme" xml:space="preserve">
+    <value>Helles Theme</value>
+  </data>
+  <data name="BlueTheme" xml:space="preserve">
+    <value>Blaues Theme</value>
+  </data>
+  <data name="GreenTheme" xml:space="preserve">
+    <value>Grünes Theme</value>
+  </data>
+  <data name="OrangeTheme" xml:space="preserve">
+    <value>Oranges Theme</value>
+  </data>
+  <data name="PurpleTheme" xml:space="preserve">
+    <value>Lila Theme</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="SimplifiedChinese" xml:space="preserve">
+    <value>Vereinfachtes Chinesisch</value>
+  </data>
+  <data name="TraditionalChinese" xml:space="preserve">
+    <value>Traditionelles Chinesisch</value>
+  </data>
+  <data name="German" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="French" xml:space="preserve">
+    <value>Französisch</value>
+  </data>
+  <data name="Japanese" xml:space="preserve">
+    <value>Japanisch</value>
+  </data>
+  <data name="DistinctCount" xml:space="preserve">
+    <value>Eindeutige Anzahl</value>
+  </data>
+  <data name="Variance" xml:space="preserve">
+    <value>Varianz</value>
+  </data>
+  <data name="StandardDeviation" xml:space="preserve">
+    <value>Standardabweichung</value>
+  </data>
+  <data name="Median" xml:space="preserve">
+    <value>Median</value>
+  </data>
+  <data name="Mode" xml:space="preserve">
+    <value>Modalwert</value>
+  </data>
+  <data name="PopulationVariance" xml:space="preserve">
+    <value>Populationsvarianz</value>
+  </data>
+  <data name="PopulationStandardDeviation" xml:space="preserve">
+    <value>Populationsstandardabweichung</value>
+  </data>
+  <data name="Quartile" xml:space="preserve">
+    <value>Quartil</value>
+  </data>
+  <data name="Percentile" xml:space="preserve">
+    <value>Perzentil</value>
+  </data>
+  <data name="Skewness" xml:space="preserve">
+    <value>Schiefe</value>
+  </data>
+  <data name="Kurtosis" xml:space="preserve">
+    <value>Kurtosis</value>
+  </data>
+  <data name="CoefficientOfVariation" xml:space="preserve">
+    <value>Variationskoeffizient</value>
+  </data>
+  <data name="GeometricMean" xml:space="preserve">
+    <value>Geometrisches Mittel</value>
+  </data>
+  <data name="HarmonicMean" xml:space="preserve">
+    <value>Harmonisches Mittel</value>
+  </data>
+  <data name="Range" xml:space="preserve">
+    <value>Spannweite</value>
+  </data>
+  <data name="SumAbsolute" xml:space="preserve">
+    <value>Summe Absolut</value>
+  </data>
+  <data name="SumSquares" xml:space="preserve">
+    <value>Quadratsumme</value>
+  </data>
+  <data name="RootMeanSquare" xml:space="preserve">
+    <value>Quadratischer Mittelwert</value>
+  </data>
+  <data name="Parameter" xml:space="preserve">
+    <value>Parameter</value>
+  </data>
+  <data name="QuartileValueRange" xml:space="preserve">
+    <value>Quartil (1-3)</value>
+  </data>
+  <data name="PercentileValueRange" xml:space="preserve">
+    <value>Perzentil (0-100)</value>
+  </data>
+  <data name="PercentileValueRangeError" xml:space="preserve">
+    <value>Perzentilwert muss zwischen 0 und 100 liegen</value>
+  </data>
+  <data name="InvalidPercentileValue" xml:space="preserve">
+    <value>Ungültiger Perzentilwert</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Ausgewählt</value>
+  </data>
+</root>
