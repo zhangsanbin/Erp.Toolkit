@@ -1,11 +1,11 @@
 # Erp.Toolkit
 
-[![Docker Image Size](https://img.shields.io/docker/image-size/doipc/erpwebapi?color=0db7ed)](https://hub.docker.com/r/doipc/erpwebapi)
 [![License](https://img.shields.io/github/license/zhangsanbin/Erp.Toolkit?color=97ca00)](./LICENSE)
 [![Docker](https://img.shields.io/badge/docker-latest-0db7ed?logo=docker)](https://hub.docker.com/r/doipc/erpwebapi)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/zhangsanbin/Erp.Toolkit?color=fe7d37)](https://github.com/zhangsanbin/Erp.Toolkit)
 [![Pulls](https://img.shields.io/docker/pulls/doipc/erpwebapi?color=6f42c1)](https://hub.docker.com/r/doipc/erpwebapi)
 [![NuGet Version](https://img.shields.io/nuget/v/Erp.Toolkit?color=005cc5)](https://www.nuget.org/packages/Erp.Toolkit)
+[![NuGet Downloads](https://img.shields.io/nuget/dt/Erp.Toolkit)](https://www.nuget.org/packages/Erp.Toolkit)
 
 [English](README.md) | [中文](README_zh.md)
 
