@@ -351,18 +351,19 @@ namespace Erp.Toolkit.Controls
         /// </summary>
         private void ScheduleConfigSave()
         {
-            // 清除已有定时器
-            _saveTimer?.Stop();
-
-            // 创建新定时器（500ms延迟）
-            _saveTimer = new System.Windows.Forms.Timer { Interval = 500 };
-            _saveTimer.Tick += (s, e) =>
+            // 如果定时器尚未创建，则创建并配置
+            if (_saveTimer == null)
             {
-                _saveTimer.Stop();
-                SaveGuiConfigs();
-                _saveTimer.Dispose();
-                _saveTimer = null;
-            };
+                _saveTimer = new System.Windows.Forms.Timer { Interval = 500 };
+                _saveTimer.Tick += (s, e) =>
+                {
+                    _saveTimer.Stop();  // 停止定时器，等待下次触发
+                    SaveGuiConfigs();   // 实际保存操作
+                };
+            }
+
+            // 重启定时器（停止当前计时，重新开始500ms倒计时）
+            _saveTimer.Stop();
             _saveTimer.Start();
         }
 
@@ -479,16 +480,28 @@ namespace Erp.Toolkit.Controls
         /// </summary>
         private void DataGridView_ColumnDisplayIndexChanged(object sender, DataGridViewColumnEventArgs e)
         {
-            if (_isLoadingData || _isSettingDisplayIndex) return;
+            // 如果正在加载数据或主动设置索引，不处理
+            if (_isLoadingData || _isSettingDisplayIndex)
+                return;
 
-            // 只更新当前改变的列
-            var config = _columnInfos?.FirstOrDefault(c => c.Name == e.Column.Name);
-            if (config != null)
-            {
-                config.DisplayIndex = e.Column.DisplayIndex;
-            }
+            // 确保列配置列表已初始化
+            if (_columnInfos == null)
+                return;
 
-            // 保存配置
+            // 查找当前列的配置
+            var config = _columnInfos.FirstOrDefault(c => c.Name == e.Column.Name);
+            if (config == null)
+                return;
+
+            // 仅当显示索引确实发生变化时才更新
+            int newIndex = e.Column.DisplayIndex;
+            if (config.DisplayIndex == newIndex)
+                return;
+
+            // 更新内存中的显示索引
+            config.DisplayIndex = newIndex;
+
+            // 触发延迟保存
             ScheduleConfigSave();
         }
 
