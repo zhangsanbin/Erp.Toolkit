@@ -84,6 +84,9 @@ namespace Erp.Toolkit.Controls
             // 字段属性
             this.toolStripButton_CancelHideCol.SetLocalizationKey("FieldProperties");
 
+            // 保存布局
+            this.toolStripButton_SaveLayout.SetLocalizationKey("SaveLayout");
+
             // 复制
             this.ToolStripMenuItem_copy.SetLocalizationKey("Copy");
             this.ToolStripMenuItem_RowHeader_copy.SetLocalizationKey("Copy");
@@ -500,6 +503,25 @@ namespace Erp.Toolkit.Controls
 
             // 更新内存中的显示索引
             config.DisplayIndex = newIndex;
+
+            // 触发延迟保存
+            // ScheduleConfigSave();
+
+            // 开启手动保存布局
+            this.toolStripButton_SaveLayout.Enabled = true;
+            this.toolStripButton_SaveLayout.Visible = true;
+        }
+
+        /// <summary>
+        /// 保存布局按钮点击事件，立即保存配置到磁盘
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton_SaveLayout_Click(object sender, EventArgs e)
+        {
+            // 隐藏保存布局按钮
+            this.toolStripButton_SaveLayout.Enabled = false;
+            this.toolStripButton_SaveLayout.Visible = false;
 
             // 触发延迟保存
             ScheduleConfigSave();

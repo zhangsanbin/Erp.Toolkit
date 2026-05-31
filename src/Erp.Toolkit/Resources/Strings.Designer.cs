@@ -1546,6 +1546,15 @@ namespace Erp.Toolkit.Resources {
         }
         
         /// <summary>
+        ///   查找类似 Save Layout 的本地化字符串。
+        /// </summary>
+        internal static string SaveLayout {
+            get {
+                return ResourceManager.GetString("SaveLayout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找类似 Search by Format 的本地化字符串。
         /// </summary>
         internal static string SearchByFormat {

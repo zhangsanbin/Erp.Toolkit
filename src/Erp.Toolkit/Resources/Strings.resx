@@ -744,4 +744,7 @@
   <data name="Selected" xml:space="preserve">
     <value>Selected</value>
   </data>
+  <data name="SaveLayout" xml:space="preserve">
+    <value>Save Layout</value>
+  </data>
 </root>

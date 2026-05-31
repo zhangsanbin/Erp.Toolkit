@@ -121,8 +121,14 @@
   <data name="toolStripUnfilter.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolStripUnfilter.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="NextPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NextPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="toolStripFind.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolStripFind.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cancel_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toolStripConditionalStyles.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolStripConditionalStyles.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +142,8 @@
   <data name="PreviousPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\PreviousPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Check_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,11 +160,11 @@
   <data name="toolStripAtt.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolStripAtt.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="proportion_87" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\proportion_87.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Upper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Upper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="proportion_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proportion_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toolStripDescActivation.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolStripDescActivation.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,11 +175,11 @@
   <data name="proportion_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proportion_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="proportion_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\proportion_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="proportion_0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proportion_0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="exp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="fastPrinting_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\fastPrinting_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,14 +193,20 @@
   <data name="print" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\print.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cancel_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cancel_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="proportion_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proportion_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="printPreview" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\printPreview.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Page4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Page4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Upper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Upper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="expandIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\expandIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,14 +217,14 @@
   <data name="proportion_75" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proportion_75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="proportion_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\proportion_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="proportion_87" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proportion_87.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toolStripFreeze.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolStripFreeze.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Page2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Page2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Check_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Check_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="print_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\print_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -235,8 +247,8 @@
   <data name="Vertical" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Vertical.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exp" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Down" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Down.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="mdf_ndf_dbfiles" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mdf_ndf_dbfiles.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -250,40 +262,31 @@
   <data name="refresh2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\refresh2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="expandIcon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\expandIcon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="proportion_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\proportion_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="toolStripAsc.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\toolStripAsc.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="NextPage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\NextPage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Page2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Page2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="proportion_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\proportion_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CToolStripButton.Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CToolStripButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Page6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Page6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Cancel_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cancel_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cancel_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancel_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Cancel_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cancel_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Check_disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Check_disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Check_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Check_hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Check_normal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Check_normal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Page6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Page6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

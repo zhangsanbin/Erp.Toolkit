@@ -156,6 +156,7 @@ namespace Erp.Toolkit.Controls
             this.toolStripButton_char = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton_conditionalStyles = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton_CancelHideCol = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton_SaveLayout = new System.Windows.Forms.ToolStripButton();
             this.RowHeaderIconList = new System.Windows.Forms.ImageList(this.components);
             this.RowHeaderContextMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.ToolStripMenuItem_add = new System.Windows.Forms.ToolStripMenuItem();
@@ -247,7 +248,7 @@ namespace Erp.Toolkit.Controls
             this.ToolStripMenuItem_sysTheme,
             this.toolStripSeparator3});
             this.DgvContextMenuStrip.Name = "ContextMenuStrip1";
-            this.DgvContextMenuStrip.Size = new System.Drawing.Size(226, 470);
+            this.DgvContextMenuStrip.Size = new System.Drawing.Size(226, 448);
             // 
             // ToolStripMenuItem_asc
             // 
@@ -1054,7 +1055,8 @@ namespace Erp.Toolkit.Controls
             this.toolStripSeparator21,
             this.toolStripButton_char,
             this.toolStripButton_conditionalStyles,
-            this.toolStripButton_CancelHideCol});
+            this.toolStripButton_CancelHideCol,
+            this.toolStripButton_SaveLayout});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -1169,6 +1171,17 @@ namespace Erp.Toolkit.Controls
             this.toolStripButton_CancelHideCol.Size = new System.Drawing.Size(79, 22);
             this.toolStripButton_CancelHideCol.Text = "字段属性";
             this.toolStripButton_CancelHideCol.Click += new System.EventHandler(this.toolStripButton_CancelHideCol_Click);
+            // 
+            // toolStripButton_SaveLayout
+            // 
+            this.toolStripButton_SaveLayout.Enabled = false;
+            this.toolStripButton_SaveLayout.Image = global::Erp.Toolkit.Properties.Resources.save;
+            this.toolStripButton_SaveLayout.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton_SaveLayout.Name = "toolStripButton_SaveLayout";
+            this.toolStripButton_SaveLayout.Size = new System.Drawing.Size(79, 22);
+            this.toolStripButton_SaveLayout.Text = "保存布局";
+            this.toolStripButton_SaveLayout.Visible = false;
+            this.toolStripButton_SaveLayout.Click += new System.EventHandler(this.toolStripButton_SaveLayout_Click);
             // 
             // RowHeaderIconList
             // 
@@ -1590,5 +1603,6 @@ namespace Erp.Toolkit.Controls
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator23;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator24;
         private System.Windows.Forms.ToolStripComboBox ToolStripComboBox_Language;
+        private System.Windows.Forms.ToolStripButton toolStripButton_SaveLayout;
     }
 }

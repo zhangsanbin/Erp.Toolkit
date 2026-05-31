@@ -744,4 +744,7 @@
   <data name="Selected" xml:space="preserve">
     <value>已選取</value>
   </data>
+  <data name="SaveLayout" xml:space="preserve">
+    <value>儲存版面配置</value>
+  </data>
 </root>
