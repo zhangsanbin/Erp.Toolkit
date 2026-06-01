@@ -2252,7 +2252,11 @@ namespace Erp.Toolkit.Controls
             if (Guid != null)
             {
                 // 延迟保存配置
-                ScheduleConfigSave();
+                // ScheduleConfigSave();
+
+                // 开启手动保存布局
+                this.toolStripButton_SaveLayout.Enabled = true;
+                this.toolStripButton_SaveLayout.Visible = true;
             }
         }
 
@@ -2391,7 +2395,11 @@ namespace Erp.Toolkit.Controls
             if (Guid != null)
             {
                 // 延迟保存配置
-                ScheduleConfigSave();
+                // ScheduleConfigSave();
+
+                // 开启手动保存布局
+                this.toolStripButton_SaveLayout.Enabled = true;
+                this.toolStripButton_SaveLayout.Visible = true;
             }
         }
 

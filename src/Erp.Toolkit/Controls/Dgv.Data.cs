@@ -531,6 +531,10 @@ namespace Erp.Toolkit.Controls
 
             // 保持更新后的数据
             ColumnInfos = mergedColumnInfos;
+
+            // 隐藏保存布局按钮
+            this.toolStripButton_SaveLayout.Enabled = false;
+            this.toolStripButton_SaveLayout.Visible = false;
         }
 
         #endregion 主数据

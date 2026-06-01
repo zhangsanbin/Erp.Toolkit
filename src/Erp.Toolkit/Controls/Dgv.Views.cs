@@ -468,14 +468,33 @@ namespace Erp.Toolkit.Controls
         /// </summary>
         private void DataGridView_ColumnWidthChanged(object sender, DataGridViewColumnEventArgs e)
         {
-            // 使用 LINQ 查找匹配的配置项
-            var config = _columnInfos?.FirstOrDefault(c => c.Name == e.Column.Name);
+            // 避免在加载数据时处理
+            if (_isLoadingData)
+                return;
 
-            if (config != null)
-            {
-                config.RowWidth = e.Column.Width;
-                ScheduleConfigSave();
-            }
+            // 参数及配置检查
+            if (e?.Column == null || _columnInfos == null)
+                return;
+
+            // 查找对应的列配置
+            var config = _columnInfos.FirstOrDefault(c => c.Name == e.Column.Name);
+            if (config == null)
+                return;
+
+            // 仅当宽度确实变化时才更新（避免重复触发）
+            int newWidth = e.Column.Width;
+            if (config.RowWidth == newWidth)
+                return;
+
+            // 更新内存中的列宽
+            config.RowWidth = newWidth;
+
+            // 触发延迟保存
+            // ScheduleConfigSave();
+
+            // 开启手动保存布局（与 DisplayIndex 逻辑一致）
+            this.toolStripButton_SaveLayout.Enabled = true;
+            this.toolStripButton_SaveLayout.Visible = true;
         }
 
         /// <summary>

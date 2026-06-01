@@ -1402,7 +1402,14 @@ namespace Erp.Toolkit.Controls
 
                 // 延迟保存配置
                 if (Guid != null)
-                    ScheduleConfigSave();
+                {
+                    // 触发延迟保存
+                    // ScheduleConfigSave();
+
+                    // 开启手动保存布局
+                    this.toolStripButton_SaveLayout.Enabled = true;
+                    this.toolStripButton_SaveLayout.Visible = true;
+                }
             }
         }
 
