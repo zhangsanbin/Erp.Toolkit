@@ -9,7 +9,7 @@
     
     <!-- NuGet 包属性 -->
     <PackageId>Erp.Toolkit</PackageId>
-    <Version>0.5.2</Version>
+    <Version>0.5.3</Version>
     <Authors>Sanbin</Authors>
     <Title>Erp Toolkit</Title>
     <PackageIcon>erp.toolkit.logo.png</PackageIcon>
@@ -17,7 +17,7 @@
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <PackageTags>erp;datagridview;winforms;toolkit</PackageTags>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageReleaseNotes>Direct print (no dialog) silent printing</PackageReleaseNotes>
+    <PackageReleaseNotes>Added manual storage logic for column width, display order, and sorting parameters.</PackageReleaseNotes>
     <PackageProjectUrl>https://github.com/zhangsanbin/Erp.Toolkit</PackageProjectUrl>
     <RepositoryUrl>https://github.com/zhangsanbin/Erp.Toolkit.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
