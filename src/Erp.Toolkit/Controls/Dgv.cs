@@ -2021,7 +2021,8 @@ namespace Erp.Toolkit.Controls
             var menuItem = new ToolStripMenuItem
             {
                 Text = toolStripButton.Text,
-                ToolTipText = toolStripButton.ToolTipText,
+                // 停用 ToolTipText 因为提示信息可能会遮盖鼠标处的菜单，导致点击菜单无效
+                // ToolTipText = toolStripButton.ToolTipText,
                 Image = toolStripButton.Image,
                 Checked = toolStripButton.Checked
             };
