@@ -42,9 +42,13 @@ PMA_IMAGE="phpmyadmin:latest"
 PMA_PORT_HOST="8081"
 PMA_PORT_CONTAINER="80"
 
-# WebAPI
+# WebAPI 镜像源
 API_CONTAINER="Erp.WebAPI"
-API_IMAGE="doipc/erpwebapi:latest"
+API_IMAGE_OFFICIAL="doipc/erpwebapi:latest"
+API_IMAGE_ALIYUN="crpi-ul14z15hxdr420vg.cn-hangzhou.personal.cr.aliyuncs.com/doipc/erpwebapi:latest"
+API_IMAGE_TENCENT="ccr.ccs.tencentyun.com/doipc/erpwebapi:latest"
+API_IMAGE_HUAWEI="swr.cn-east-3.myhuaweicloud.com/doipc/erpwebapi:latest"
+
 UPLOAD_HOST_DIR="$HOME/docker-volumes/appupload"
 API_VOLUME="${UPLOAD_HOST_DIR}:/userData"
 API_HOST_PORT="80"
@@ -309,7 +313,46 @@ else
     echo -e "  ℹ️  未找到名为 ${API_CONTAINER} 的容器"
 fi
 
-# ---- 9. 拉取最新 WebAPI 镜像 ----
+# ---- 9. 选择镜像源并拉取最新 WebAPI 镜像 ----
+echo -e "${YELLOW}[9/10] 请选择 WebAPI 镜像源（30秒内无输入默认使用官方源）${NC}"
+echo "  1) 官方源 (Docker Hub) (默认)"
+echo "     ${API_IMAGE_OFFICIAL}"
+echo "  2) 阿里云源"
+echo "     ${API_IMAGE_ALIYUN}"
+echo "  3) 腾讯云源"
+echo "     ${API_IMAGE_TENCENT}"
+echo "  4) 华为云源"
+echo "     ${API_IMAGE_HUAWEI}"
+read -t 30 -p "请输入选项 [1-4]: " IMAGE_SOURCE_CHOICE || true
+
+if [ -z "$IMAGE_SOURCE_CHOICE" ]; then
+    IMAGE_SOURCE_CHOICE=1
+    echo -e "${YELLOW}  ⏰ 超时未输入，自动使用官方源${NC}"
+fi
+
+case $IMAGE_SOURCE_CHOICE in
+    1)
+        API_IMAGE="$API_IMAGE_OFFICIAL"
+        echo -e "  ${GREEN}✅ 选择镜像源: 官方源${NC}"
+        ;;
+    2)
+        API_IMAGE="$API_IMAGE_ALIYUN"
+        echo -e "  ${GREEN}✅ 选择镜像源: 阿里云源${NC}"
+        ;;
+    3)
+        API_IMAGE="$API_IMAGE_TENCENT"
+        echo -e "  ${GREEN}✅ 选择镜像源: 腾讯云源${NC}"
+        ;;
+    4)
+        API_IMAGE="$API_IMAGE_HUAWEI"
+        echo -e "  ${GREEN}✅ 选择镜像源: 华为云源${NC}"
+        ;;
+    *)
+        echo -e "${RED}❌ 无效选项，使用官方源${NC}"
+        API_IMAGE="$API_IMAGE_OFFICIAL"
+        ;;
+esac
+
 echo -e "${YELLOW}[9/10] 拉取最新 WebAPI 镜像: ${API_IMAGE} ...${NC}"
 docker pull ${API_IMAGE}
 echo -e "  ${GREEN}✅ WebAPI 镜像拉取完成${NC}"
@@ -332,6 +375,30 @@ else
 fi
 echo -e "  ${GREEN}✅ JWT 密钥已生成（长度: ${#JWT_SIGN_KEY} 字符）${NC}"
 
+# ---- 询问是否启用数据库自动迁移 ----
+echo -e "${YELLOW}  是否启用数据库自动迁移（AUTO_MIGRATE）？${NC}"
+echo "  AUTO_MIGRATE=true 会在应用启动时自动执行数据库迁移（EF Core Migrate）。"
+echo "  默认启用（true），30秒内无输入自动启用。"
+read -t 30 -p "启用自动迁移? [Y/n]: " MIGRATE_INPUT || true
+
+AUTO_MIGRATE=true
+if [ -n "$MIGRATE_INPUT" ]; then
+    case "$MIGRATE_INPUT" in
+        [nN]|[nN][oO])
+            AUTO_MIGRATE=false
+            ;;
+        *)
+            AUTO_MIGRATE=true
+            ;;
+    esac
+fi
+
+if [ "$AUTO_MIGRATE" = true ]; then
+    echo -e "  ${GREEN}✅ 将启用自动迁移（AUTO_MIGRATE=true）${NC}"
+else
+    echo -e "  ${YELLOW}⚠️  将禁用自动迁移（AUTO_MIGRATE=false），请确保数据库结构已就绪，否则应用可能启动失败${NC}"
+fi
+
 docker run --name ${API_CONTAINER} \
     --network ${NETWORK} \
     --user $(id -u):$(id -g) \
@@ -339,7 +406,7 @@ docker run --name ${API_CONTAINER} \
     -p ${API_HOST_PORT}:${API_CONTAINER_PORT} \
     -e "Database__Provider=${DB_PROVIDER}" \
     -e "ConnectionStrings__${DB_PROVIDER}=${DB_CONNECTION_STRING}" \
-    -e "AUTO_MIGRATE=true" \
+    -e "AUTO_MIGRATE=${AUTO_MIGRATE}" \
     -e "Authentication__Jwt__Sign=${JWT_SIGN_KEY}" \
     -d ${API_IMAGE}
 
@@ -388,6 +455,7 @@ if [ $? -eq 0 ]; then
     echo "  ● 网络: ${NETWORK}"
     echo "  ● 数据库: ${DB_TYPE} (容器 ${DB_CONTAINER}，端口 ${DB_PORT_HOST}，数据目录 ${DB_VOLUME_HOST})"
     echo "  ● WebAPI: 容器 ${API_CONTAINER}"
+    echo "      - 镜像源:          ${API_IMAGE}"
     echo "      - 本机访问:        http://localhost:${API_HOST_PORT}"
     if [ -n "$HOST_IP" ]; then
         echo "      - 局域网/对外IP:   http://${HOST_IP}:${API_HOST_PORT}"
@@ -397,6 +465,7 @@ if [ $? -eq 0 ]; then
     echo "  ● 上传目录: ${UPLOAD_HOST_DIR}（挂载到容器内 /userData）"
     echo "  ● 容器以用户 $(id -u):$(id -g) 运行，因此拥有目录写入权限"
     echo "  ● JWT 密钥: 已注入（未显示）"
+    echo "  ● 数据库自动迁移(AUTO_MIGRATE): ${AUTO_MIGRATE}"
 
     # MySQL 分支的 phpMyAdmin 信息
     if [ "$DB_TYPE" = "mysql" ]; then
