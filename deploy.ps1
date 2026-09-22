@@ -39,9 +39,13 @@ $PMA_IMAGE = "phpmyadmin:latest"
 $PMA_PORT_HOST = "8081"
 $PMA_PORT_CONTAINER = "80"
 
-# WebAPI
+# WebAPI 镜像源
 $API_CONTAINER = "Erp.WebAPI"
-$API_IMAGE = "doipc/erpwebapi:latest"
+$API_IMAGE_OFFICIAL = "doipc/erpwebapi:latest"
+$API_IMAGE_ALIYUN = "crpi-ul14z15hxdr420vg.cn-hangzhou.personal.cr.aliyuncs.com/doipc/erpwebapi:latest"
+$API_IMAGE_TENCENT = "ccr.ccs.tencentyun.com/doipc/erpwebapi:latest"
+$API_IMAGE_HUAWEI = "swr.cn-east-3.myhuaweicloud.com/doipc/erpwebapi:latest"
+
 $UPLOAD_HOST_DIR = "D:\VolumesDocker\appupload"
 $API_VOLUME = "${UPLOAD_HOST_DIR}:/userData"
 $API_HOST_PORT = "80"
@@ -385,6 +389,50 @@ if ($oldApi) {
     Write-ColorOutput Yellow "  ℹ️  未找到名为 $API_CONTAINER 的容器"
 }
 
+# ---- 9. 选择镜像源并拉取最新 WebAPI 镜像 ----
+Write-ColorOutput Yellow "[9/10] 请选择 WebAPI 镜像源（30秒内无输入默认使用官方源）"
+Write-Host "  1) 官方源 (Docker Hub) (默认)"
+Write-Host "     $API_IMAGE_OFFICIAL"
+Write-Host "  2) 阿里云源"
+Write-Host "     $API_IMAGE_ALIYUN"
+Write-Host "  3) 腾讯云源"
+Write-Host "     $API_IMAGE_TENCENT"
+Write-Host "  4) 华为云源"
+Write-Host "     $API_IMAGE_HUAWEI"
+Write-Host "  [提示] 请输入数字（1-4）后按回车确认。"
+
+$imageSourceChoice = Read-HostWithTimeout -Prompt "请输入选项 [1-4]: " -TimeoutSeconds 30 -DefaultValue "1"
+Write-Host "您选择了: $imageSourceChoice"
+
+if ($imageSourceChoice -eq $null -or $imageSourceChoice -eq "") {
+    $imageSourceChoice = "1"
+    Write-ColorOutput Yellow "  ⏰ 超时未输入，自动使用官方源"
+}
+
+$API_IMAGE = ""
+switch ($imageSourceChoice) {
+    "1" {
+        $API_IMAGE = $API_IMAGE_OFFICIAL
+        Write-ColorOutput Green "  ✅ 选择镜像源: 官方源"
+    }
+    "2" {
+        $API_IMAGE = $API_IMAGE_ALIYUN
+        Write-ColorOutput Green "  ✅ 选择镜像源: 阿里云源"
+    }
+    "3" {
+        $API_IMAGE = $API_IMAGE_TENCENT
+        Write-ColorOutput Green "  ✅ 选择镜像源: 腾讯云源"
+    }
+    "4" {
+        $API_IMAGE = $API_IMAGE_HUAWEI
+        Write-ColorOutput Green "  ✅ 选择镜像源: 华为云源"
+    }
+    default {
+        Write-ColorOutput Red "❌ 无效选项，使用官方源"
+        $API_IMAGE = $API_IMAGE_OFFICIAL
+    }
+}
+
 # ---- 9. 拉取最新 WebAPI 镜像 ----
 Write-ColorOutput Yellow "[9/10] 拉取最新 WebAPI 镜像: $API_IMAGE ..."
 docker pull $API_IMAGE
@@ -402,6 +450,25 @@ $bytes = New-Object byte[] 32
 $JWT_SIGN_KEY = [System.Convert]::ToBase64String($bytes)
 Write-ColorOutput Green "  ✅ JWT 密钥已生成（长度: $($JWT_SIGN_KEY.Length) 字符）"
 
+# ---- 询问是否启用数据库自动迁移 ----
+Write-ColorOutput Yellow "  是否启用数据库自动迁移（AUTO_MIGRATE）？"
+Write-Host "  AUTO_MIGRATE=true 会在应用启动时自动执行数据库迁移（EF Core Migrate）。"
+Write-Host "  默认启用（true），30秒内无输入自动启用。"
+Write-Host "  [提示] 请输入 Y (启用) 或 N (禁用) 后按回车确认。"
+$migrateInput = Read-HostWithTimeout -Prompt "启用自动迁移? [Y/n]: " -TimeoutSeconds 30 -DefaultValue "Y"
+Write-Host "您选择了: $migrateInput"
+
+$AUTO_MIGRATE = "true"
+if ($migrateInput -match "^[nN]$") {
+    $AUTO_MIGRATE = "false"
+}
+
+if ($AUTO_MIGRATE -eq "true") {
+    Write-ColorOutput Green "  ✅ 将启用自动迁移（AUTO_MIGRATE=true）"
+} else {
+    Write-ColorOutput Yellow "  ⚠️  将禁用自动迁移（AUTO_MIGRATE=false），请确保数据库结构已就绪，否则应用可能启动失败"
+}
+
 $dockerUploadPath = $UPLOAD_HOST_DIR -replace '\\', '/'
 $apiArgs = @(
     "run", "--name", $API_CONTAINER,
@@ -410,7 +477,7 @@ $apiArgs = @(
     "-p", "${API_HOST_PORT}:${API_CONTAINER_PORT}",
     "-e", "Database__Provider=$DB_PROVIDER",
     "-e", "ConnectionStrings__${DB_PROVIDER}=$DB_CONNECTION_STRING",
-    "-e", "AUTO_MIGRATE=true",
+    "-e", "AUTO_MIGRATE=$AUTO_MIGRATE",
     "-e", "Authentication__Jwt__Sign=$JWT_SIGN_KEY",
     "-d", $API_IMAGE
 )
@@ -462,6 +529,7 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "  ● 网络: $NETWORK"
     Write-Host "  ● 数据库: $DB_TYPE (容器 $DB_CONTAINER，端口 $DB_PORT_HOST，数据目录 $DB_VOLUME_HOST)"
     Write-Host "  ● WebAPI: 容器 $API_CONTAINER"
+    Write-Host "      - 镜像源:          $API_IMAGE"
     Write-Host "      - 本机访问:        http://localhost:${API_HOST_PORT}"
     if ($HOST_IP) {
         Write-Host "      - 局域网/对外IP:   http://${HOST_IP}:${API_HOST_PORT}"
@@ -470,6 +538,7 @@ if ($LASTEXITCODE -eq 0) {
     }
     Write-Host "  ● 上传目录: $UPLOAD_HOST_DIR（挂载到容器内 /userData）"
     Write-Host "  ● JWT 密钥: 已注入（未显示）"
+    Write-Host "  ● 数据库自动迁移(AUTO_MIGRATE): $AUTO_MIGRATE"
 
     # MySQL 分支的 phpMyAdmin 信息
     if ($DB_TYPE -eq "mysql") {
